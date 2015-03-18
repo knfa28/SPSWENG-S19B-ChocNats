@@ -1,0 +1,3044 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup1">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup2">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroup3">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="jTabbedPane1" min="-2" pref="728" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(1) General">
+                <Property name="tabTitle" type="java.lang.String" value="(1) General"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="APASLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="dateLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dateData" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="complaintLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="illnessLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="headacheCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="blurringCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="systemsReviewLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="bruiseCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="photoCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="malarCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="ulcerCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="mottlingCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="chestCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="PDcheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="abdominalCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="contractionsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="bleedingCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="claudicationCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="paresthesiaCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jointCheck" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="othersCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="othersTxtbx" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="cseNumLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="patientIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="patientIDData" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="caseNumData" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Component id="jScrollPane1" alignment="0" min="-2" pref="280" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="196" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane2" min="-2" pref="280" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="APASLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dateData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="cseNumLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="caseNumData" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="patientIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="patientIDData" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="illnessLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="complaintLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="96" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="systemsReviewLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="headacheCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ulcerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="PDcheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jointCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="blurringCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="malarCheck" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                          <Component id="abdominalCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="paresthesiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="chestCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="contractionsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="claudicationCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="photoCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="bruiseCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="mottlingCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="bleedingCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="othersCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="othersTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="42" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="APASLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="APAS Form:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cseNumLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Case Number: "/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="dateLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Date:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="dateData">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[dd/MM/yyyy]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="caseNumData">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[caseNum]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="patientIDLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Patient ID:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="patientIDData">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[patientID]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="complaintLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chief Complaint:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="complaintTextArea">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="illnessLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="History of Present Illness:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="illnessTextArea">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="systemsReviewLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Review of Systems:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="blurringCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Blurring of Vision"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="photoCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Photosensitivity"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bruiseCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Easily Bruised"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="malarCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Malar Rash"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="headacheCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Headache"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ulcerCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Oral Ulcers"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="chestCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chest Pain"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="mottlingCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Skin Mottling"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="PDcheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Paroxysmal dyspnea"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="abdominalCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abdominal Pain"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="contractionsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Contractions"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bleedingCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bleeding"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jointCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Joint Pain/Swelling"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="paresthesiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Paresthesia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="claudicationCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Claudication"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="othersCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Others:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="othersTxtbx">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(2) Birth History">
+                <Property name="tabTitle" type="java.lang.String" value="(2) Birth History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="birthHistoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="prenatalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="maternalUseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="maternalIllnessLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="aogLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="deliveryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="locationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="complicationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="nsvdCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="termCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hospitalCheck" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="yesCompCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="yesCompTxtbx" min="-2" pref="117" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="pretermCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="estimateAOGLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="estimateAOGTxtbx" min="-2" pref="103" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="forcepsCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="yesUCCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lyingCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="csCheck" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="homeCheck" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="homeTxtbx" min="-2" pref="111" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="gLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="gTxtbx" min="-2" pref="28" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Component id="pLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="pTxtbx" min="-2" pref="28" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="ageSpinner" min="-2" pref="39" max="-2" attributes="0"/>
+                                          <Component id="prenatalSpinner" min="-2" pref="39" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="xVisitLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="prenatalTxtbx" min="-2" pref="144" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="alcoholCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="geneticCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="infectiousCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                                              <Component id="autoimmuneCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="clottingCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                              <Component id="maternalOthersCheck" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="maternalOthersTxtbx" min="-2" pref="111" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="drugsCheck" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="ageLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="catherizationLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="noUCCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="noCompCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="birthHistoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="aogLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="termCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pretermCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="estimateAOGLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="estimateAOGTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="deliveryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="nsvdCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="forcepsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="csCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="locationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hospitalCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lyingCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="homeCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="homeTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                              <Component id="noCompCheck" min="-2" max="-2" attributes="0"/>
+                              <Component id="complicationLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="yesCompCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="yesCompTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="catherizationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="noUCCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="yesUCCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="pTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ageSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="gLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="prenatalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="xVisitLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="prenatalTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="prenatalSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="maternalUseLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="alcoholCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="drugsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="maternalIllnessLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="geneticCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="infectiousCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="autoimmuneCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="clottingCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="maternalOthersCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="maternalOthersTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="106" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="birthHistoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="For Pediatric APAS:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="aogLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="AOG:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="deliveryLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Type of Delivery:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="locationLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Location:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="complicationLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Complications:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="catherizationLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Umbilical Catherization:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ageLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Maternal Age:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="prenatalLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Prenatal Care:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="maternalUseLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Maternal use of:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="maternalIllnessLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Maternal Illness:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="termCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Term"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="pretermCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Preterm"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="estimateAOGLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estimated AOG:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="estimateAOGTxtbx">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="nsvdCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="NSVD"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="forcepsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Forceps"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="csCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CS"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hospitalCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hostpital"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="lyingCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Lying in"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="homeCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Home assisted by:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="homeTxtbx">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="noCompCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="yesCompCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Yes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="yesCompTxtbx">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="noUCCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="yesUCCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Yes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="G"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="gTxtbx">
+            </Component>
+            <Component class="javax.swing.JLabel" name="pLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="P"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="pTxtbx">
+            </Component>
+            <Component class="javax.swing.JLabel" name="xVisitLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="x visits c/o"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="prenatalTxtbx">
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="alcoholCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alcohol"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="drugsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Drugs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="geneticCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Genetic"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="infectiousCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Infectious"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="autoimmuneCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Autoimmune"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="clottingCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clotting Disorder"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="maternalOthersCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Others:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="maternalOthersTxtbx">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="ageSpinner">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="prenatalSpinner">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel3">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(3) Immunization History">
+                <Property name="tabTitle" type="java.lang.String" value="(3) Immunization History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="immunoLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="measlesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bcgCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hibCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="dptCheck" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="dptSpinner" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="dptDosesLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="opvCheck" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="opvSpinner" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="opcDosesLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="hepaCheck" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="jSpinner4" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="hepaDosesLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="tetanusCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="varicellaCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="rabiesCheck" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="hepbCheck" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="jSpinner3" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="hepbDosesLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="immunoOthersCheck" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="immunoOthersTxtbx" min="-2" pref="162" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="262" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="immunoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="bcgCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hepbCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hepbDosesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="immunoOthersCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="immunoOthersTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="dptCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dptDosesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hepaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hepaDosesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="dptSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jSpinner4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="opvCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="opcDosesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="varicellaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="opvSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="rabiesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="measlesCheck" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="tetanusCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="hibCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="193" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="immunoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Immunization History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bcgCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BCG"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="dptCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="DPT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="opvCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="OPV"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="measlesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Measles"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hibCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="HiB"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hepbCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hep B"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hepaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hep A"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="varicellaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Varicella"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="rabiesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Anti Rabies"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="tetanusCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Td/Tetanus Toxoid"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="immunoOthersCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Others:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="immunoOthersTxtbx">
+            </Component>
+            <Component class="javax.swing.JLabel" name="dptDosesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="doses"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="opcDosesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="doses"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="hepbDosesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="doses"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="hepaDosesLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="doses"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSpinner" name="dptSpinner">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="opvSpinner">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="jSpinner3">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="jSpinner4">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(4) Nutritional History">
+                <Property name="tabTitle" type="java.lang.String" value="(4) Nutritional History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="solidsCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="formulaCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="nutritionalHistoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="breastCheck" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="breastSpinner" min="-2" pref="44" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="breastMonthLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="preferenceLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="preferenceTxtbx" min="-2" pref="130" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="607" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="nutritionalHistoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="breastCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="breastSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="breastMonthLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="formulaCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="solidsCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="preferenceLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="preferenceTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="234" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="nutritionalHistoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nutritional History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="breastCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Breastfed"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="formulaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Formula"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="solidsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Solids"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="preferenceLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Preference:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSpinner" name="breastSpinner">
+            </Component>
+            <Component class="javax.swing.JLabel" name="breastMonthLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Months"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="preferenceTxtbx">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel5">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(5) Growth and Developmental History">
+                <Property name="tabTitle" type="java.lang.String" value="(5) Growth and Developmental History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="growthLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="gm1Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="gm2Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="gm3Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="gm4Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="gm5Label" min="-2" max="-2" attributes="0"/>
+                                              <Component id="gm6Label" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="fm1Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fm2Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fm3Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="rollsCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="liftCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="sitsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="stepsCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="walksCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="standsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="midlineCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="rattleCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="reachesObjectsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel25" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="ps1Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps2Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps3Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps4Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps5Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps6Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fm4Label" min="-2" max="-2" attributes="0"/>
+                                          <Component id="fm5Label" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="dressesCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="namesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="imitatesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="scubblesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="smilesCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="faceCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="drawsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="wavesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="8" pref="8" max="-2" attributes="0"/>
+                                              <Component id="l6Label" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="l5Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l4Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l3Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l7Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l8Label" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="picturesCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="damaCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="babblesCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="laughsCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="speechCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="bodyPartsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="l2Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                                              <Component id="l1Label" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="respondsCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="coosCheck" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="growthLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="liftCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm1Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rollsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="sitsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm3Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="standsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm4Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="walksCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm5Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="stepsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gm6Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                              <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="midlineCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fm1Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="rattleCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fm2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="faceCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps1Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="smilesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="wavesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps3Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="imitatesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps4Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="namesCheck" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps5Label" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="dressesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ps6Label" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="respondsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l1Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="coosCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="laughsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l3Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="babblesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l4Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="damaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l5Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="picturesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l6Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="speechCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l7Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="bodyPartsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="l8Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="scubblesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fm4Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="drawsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fm5Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="reachesObjectsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="fm3Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="growthLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Growth and Developmental History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gross Motor:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="rollsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Rolls over"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="sitsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Sits w/o support"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="standsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Puls self to stand"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="walksCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Walks well"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="stepsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Walks up steps"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="liftCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Lifts head 45&#xb0;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm1Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0-3 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2.5-5.5 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm3Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="5.5-7.5 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm4Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="8-10 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm5Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="11-15 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="gm6Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="14-22 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel9">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Personal-Social:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps1Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0-1 mo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1-2 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps3Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="7-14 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps4Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="10-16 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps5Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2.5-3.5 yrs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="ps6Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="3-4.5 yrs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="faceCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Regards face"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="smilesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Smiles responsively"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="wavesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Waves goodbye"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="imitatesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Imitates activities"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="namesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Names friend"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="dressesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dresses w/o help"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel16">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Language:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="respondsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Responds to sound"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="coosCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Coos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="laughsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Squeels/Laughs aloud"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="babblesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Combines syllables/Babbles"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="damaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Dada/Mama specific"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="picturesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Points ot pictures"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="speechCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Speech all understandable"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bodyPartsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Points to body parts"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l1Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0-1 mo"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1-3 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l3Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1.5-4.5 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l4Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="6-10 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l5Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="8-14 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l6Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="17-25 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l7Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2.4-4 yrs"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="l8Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="20-25 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel25">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fine Motor:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="midlineCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Visual tracking past midline"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="rattleCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Grasps rattle"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="reachesObjectsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Reaches for objects"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="scubblesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Scubbles"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="drawsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Draws a person w/ 3 parts"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="fm1Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="1.5-3 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="fm2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="3-4 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="fm3Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="4-6 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="fm4Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="12-16 mos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="fm5Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="3-4.5 yrs"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel6">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(6) Past Medical History">
+                <Property name="tabTitle" type="java.lang.String" value="(6) Past Medical History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="medicalHistoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane4" min="-2" pref="187" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                              <Component id="jScrollPane6" min="-2" pref="187" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cancerCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sleCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="anemiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="diabetesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="hypertensionCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="medicationsCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="thromboCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="veinsCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ciCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="hdCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="haCheck" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                                      <Component id="surgeryCheck" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cvCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ptbCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="strokeCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="idiopathicCheck" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="ptbTreatmentCheck" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="ptbRegimenTxtbx" max="32767" attributes="0"/>
+                                              <Component id="ptbDurationTxtbx" min="-2" pref="155" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Component id="hospitalizationCheck" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane5" min="-2" pref="187" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="medicalHistoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="hypertensionCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="thromboCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="strokeCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="diabetesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ciCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="idiopathicCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="anemiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="hdCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cvCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sleCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="haCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ptbCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="cancerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="veinsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ptbTreatmentCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ptbRegimenTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ptbDurationTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="surgeryCheck" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="hospitalizationCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="medicationsCheck" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane6" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane5" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="medicalHistoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Past Medical History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hypertensionCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hypertension"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="diabetesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diabetes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="anemiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Anemia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="sleCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SLE/CTD"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cancerCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cancer"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ciCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chronic Infections"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hdCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Heart Disease"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="haCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Heart Attack"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="thromboCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Thrombocytopenia"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="strokeCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Stroke"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cvCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Chronic Venous Insufficiency"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ptbCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PTB Exposure"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="medicationsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Medication Use"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ptbTreatmentCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PTB Treatment:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="veinsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Varicose Veins"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="idiopathicCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Idiopathic Seizure"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="surgeryCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Surgery"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="hospitalizationCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hospitalization"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="ptbRegimenTxtbx">
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel4">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Duration:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel5">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tx Regimen:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="ptbDurationTxtbx">
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="medicationTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="surgeryTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="hospitalizationTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel7">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(7) Family Medical History">
+                <Property name="tabTitle" type="java.lang.String" value="(7) Family Medical History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane7" min="-2" pref="240" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="famHypertensionCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famDiabetesCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famHDCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famSLECheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="famCancerCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famPTBCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famStrokeCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="youngStrokeCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="famOBCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famThyroidCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famKidneyCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="famClottingCheck" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="familyHistoLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="siblingDeathCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="329" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="familyHistoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="famHypertensionCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famCancerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famClottingCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="famDiabetesCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famPTBCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famKidneyCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="famHDCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famStrokeCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famThyroidCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="famSLECheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="youngStrokeCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="famOBCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="siblingDeathCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="familyHistoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Family Medical History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famHypertensionCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hypertension"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famDiabetesCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diabetes"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famHDCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Heart Disease"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famSLECheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="SLE/CTD"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famCancerCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cancer"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famPTBCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PTB"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famStrokeCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Stroke"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="youngStrokeCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Stroke in the young (&lt;45 yrs)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famClottingCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Clotting Disorder"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famKidneyCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kidney Disease"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famThyroidCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Thyroid Disease"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="famOBCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Similar OB History"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="siblingDeathCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Multiple sibling deaths (Circumstances)"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane7">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="siblingDeathTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel8">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(8) Personal and Social History">
+                <Property name="tabTitle" type="java.lang.String" value="(8) Personal and Social History"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="ocpCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="drugCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="alcoholicCheck" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="smokerCheck" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="smokerSpinner" min="-2" pref="40" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="smokerLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="personalHistoLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="statusLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                              <Component id="statusCombo" min="-2" pref="120" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="educationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="occupationLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="siblingsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="childrenLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="educationTxtbx" max="32767" attributes="0"/>
+                                  <Component id="occupationTxtbx" pref="119" max="32767" attributes="0"/>
+                                  <Component id="siblingsSpinner" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                                  <Component id="childrenSpinner" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="551" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="personalHistoLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="smokerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="smokerSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="smokerLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="alcoholicCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="drugCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="ocpCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="statusLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="statusCombo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="educationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="educationTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="occupationLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="occupationTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="siblingsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="siblingsSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="childrenLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="childrenSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="personalHistoLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Personal and Social History:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="smokerCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Smoker"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="alcoholicCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alcoholic beverage drinker"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="drugCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Illicit drug use"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ocpCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="OCP use"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="statusLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Status:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="educationLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Educational attainment:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="occupationLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Occupation:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="siblingsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="No. of siblings:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="childrenLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="No. of children:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSpinner" name="smokerSpinner">
+            </Component>
+            <Component class="javax.swing.JLabel" name="smokerLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="packs per year"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JComboBox" name="statusCombo">
+              <Properties>
+                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Single&quot;, &quot;Married&quot;, &quot;Student&quot;, &quot;Divorced&quot;, &quot;Other&quot; })" type="code"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="educationTxtbx">
+            </Component>
+            <Component class="javax.swing.JTextField" name="occupationTxtbx">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="siblingsSpinner">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="childrenSpinner">
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel9">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(9) Previous Workup">
+                <Property name="tabTitle" type="java.lang.String" value="(9) Previous Workup"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="wokupOthersCheck" min="-2" max="-2" attributes="0"/>
+                          <Component id="workupLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbcCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bunCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="esrCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="urinalysisCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cxrCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ecgCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ctScanCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="echoCardioCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ptCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jCheckBox10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="kctCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="acaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="antib2Check" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="utzCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="coombsCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bloodSmearCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="proteinSCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="proteinCCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="anaCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="duplexScanCheck" min="-2" max="-2" attributes="0"/>
+                                  <Component id="arterialDopplerCheck" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jScrollPane8" alignment="0" min="-2" pref="205" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="139" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="workupLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbcCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="echoCardioCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="arterialDopplerCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="bunCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ptCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="duplexScanCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="esrCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jCheckBox10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="anaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="urinalysisCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="kctCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="proteinCCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cxrCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="acaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="proteinSCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ecgCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="antib2Check" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="bloodSmearCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ctScanCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="utzCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="coombsCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="wokupOthersCheck" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane8" min="-2" pref="77" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="workupLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Previous Workup:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbcCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CBC, differential count, platelet count"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bunCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BUN, crea, Na, K, AST, ALT, Alk Phos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="esrCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ESR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="urinalysisCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Urinalysis"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cxrCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CXR-AP/PA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ecgCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="12-lead ECG"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ctScanCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CT scan"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="echoCardioCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2D echocardiography"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ptCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="jCheckBox10">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="aPTT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="kctCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="KCT, DRVVT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="acaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ACA IgG, ACA IgM"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="antib2Check">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Anti B2 GP1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="utzCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abdominal UTZ +/- doppler"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="arterialDopplerCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Peripheral arterial doppler"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="duplexScanCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Venous duplex scan"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="anaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ANA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="proteinCCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Protein C"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="proteinSCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Protein S"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bloodSmearCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Peripheral blood smear"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="coombsCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Coomb&#x2019;s test &#x2013; direct, indirect"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="wokupOthersCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Others:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane8">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="workupOthersTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel12">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(10) Management Plan">
+                <Property name="tabTitle" type="java.lang.String" value="(10) Management Plan"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="diagnosticsLabel" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="cbcDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bunDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="esrDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="urinalysisDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cxrDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ecgDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ctScanDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="wokupOthersDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="echoCardioDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="ptDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="apttDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="kctDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="acaDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="antib2DiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="utzDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="coombsDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="duplexScanDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="arterialDopplerDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="bloodSmearDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="proteinSDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="proteinCDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="anaDiaCheck" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="therapeuticsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane9" min="-2" pref="205" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="jScrollPane10" min="-2" pref="195" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="139" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="diagnosticsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbcDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="echoCardioDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="arterialDopplerDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="bunDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="ptDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="duplexScanDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="esrDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="apttDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="anaDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="urinalysisDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="kctDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="proteinCDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cxrDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="acaDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="proteinSDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ecgDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="antib2DiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="bloodSmearDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="ctScanDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="utzDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="coombsDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="wokupOthersDiaCheck" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="therapeuticsLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane9" pref="86" max="32767" attributes="0"/>
+                          <Component id="jScrollPane10" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JCheckBox" name="cbcDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CBC, differential count, platelet count"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bunDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="BUN, crea, Na, K, AST, ALT, Alk Phos"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="esrDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ESR"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="urinalysisDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Urinalysis"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cxrDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CXR-AP/PA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ecgDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="12-lead ECG"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ctScanDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="CT scan"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="wokupOthersDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Others:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="workupOthersDiaTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JCheckBox" name="utzDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abdominal UTZ +/- doppler"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="antib2DiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Anti B2 GP1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="acaDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ACA IgG, ACA IgM"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="kctDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="KCT, DRVVT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="apttDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="aPTT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="ptDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="PT"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="echoCardioDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="2D echocardiography"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="arterialDopplerDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Peripheral arterial doppler"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="duplexScanDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Venous duplex scan"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="anaDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="ANA"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="proteinCDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Protein C"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="proteinSDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Protein S"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="coombsDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Coomb&#x2019;s test &#x2013; direct, indirect"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="bloodSmearDiaCheck">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Peripheral blood smear"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="diagnosticsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Diagnostics:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="therapeuticsLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Therapeutics:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane10">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTextArea" name="therapeuticsTxtbx">
+                  <Properties>
+                    <Property name="columns" type="int" value="20"/>
+                    <Property name="rows" type="int" value="5"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel10">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="(11) Submit/Discard">
+                <Property name="tabTitle" type="java.lang.String" value="(11) Submit/Discard"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="refreshBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="jPanel11" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="addPEBtn" min="-2" pref="157" max="-2" attributes="0"/>
+                              <EmptySpace pref="41" max="32767" attributes="0"/>
+                              <Component id="submitBtn" min="-2" pref="80" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="discardBtn" min="-2" pref="80" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="recordDateLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="recordDate2Data" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="caseNum2Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="patientID2Label" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="patientID2Data" min="-2" max="-2" attributes="0"/>
+                                          <Component id="caseNum2Data" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="checkupLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="jSpinner1" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSpinner2" min="-2" pref="40" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jSpinner5" min="-2" pref="55" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="viewPeBtn" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="refreshBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="caseNum2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="caseNum2Data" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="patientID2Label" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="patientID2Data" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="recordDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="recordDate2Data" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="checkupLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jSpinner5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="viewPeBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="addPEBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="submitBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="discardBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jPanel11" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Summary:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="caseNum2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Case Number:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="patientID2Label">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Patient ID:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel11">
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane3" alignment="0" pref="309" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jScrollPane3" alignment="0" pref="339" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JList" name="summaryList">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
+                          <StringArray count="5">
+                            <StringItem index="0" value="Item 1"/>
+                            <StringItem index="1" value="Item 2"/>
+                            <StringItem index="2" value="Item 3"/>
+                            <StringItem index="3" value="Item 4"/>
+                            <StringItem index="4" value="Item 5"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="recordDateLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Date Recorded:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="submitBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Submit"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="discardBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Discard"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="discardBtnActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="addPEBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Add Physical Examination"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addPEBtnActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="caseNum2Data">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[caseNum]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="patientID2Data">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[patientID]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="recordDate2Data">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="[dd/MM/yyyy]"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="refreshBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Refresh"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="checkupLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next Checkup: (dd/MM/yyyy)"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSpinner" name="jSpinner1">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="jSpinner2">
+            </Component>
+            <Component class="javax.swing.JSpinner" name="jSpinner5">
+            </Component>
+            <Component class="javax.swing.JButton" name="viewPeBtn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="View Physical Examination"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewPeBtnActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="peLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="peTypeLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="noseData" alignment="0" max="32767" attributes="0"/>
+                          <Component id="generalData" alignment="0" max="32767" attributes="0"/>
+                          <Component id="earsData" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="throatLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="generalLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="oralLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="noseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="earsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="eyesLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="eyesData" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="headLabel" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="headData" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="heartLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="abdomenLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="extremitiesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="pulsesLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="skinLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="chestLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="neurologicLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lymphLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="neckLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="chestData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="heartData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="abdomenData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="extremitiesData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="pulsesData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="skinData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lymphData" min="-2" max="-2" attributes="0"/>
+                                          <Component id="neckData" min="-2" max="-2" attributes="0"/>
+                                          <Component id="neurologicData" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                              <Component id="patientIDData" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="patientIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="caseNumLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="caseNumData" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="recordDateLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="recordDateData" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="modifyDateLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="modifyDateData" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="128" max="-2" attributes="0"/>
+              <Component id="backBtn" min="-2" pref="80" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="throatData" alignment="0" max="32767" attributes="0"/>
+                  <Component id="oralData" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="peLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="peTypeLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="patientIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="patientIDData" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="recordDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="recordDateData" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
+                      <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="caseNumLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="caseNumData" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="modifyDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="modifyDateData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="generalLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="generalData" min="-2" pref="64" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="headLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="headData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="eyesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="eyesData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="earsLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="earsData" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="noseLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="noseData" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="oralLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="oralData" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="throatLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="throatData" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="neckLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="neckData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lymphLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lymphData" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="chestLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="heartLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abdomenLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="extremitiesLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pulsesLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="skinLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="neurologicLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="20" max="32767" attributes="0"/>
+                              <Component id="backBtn" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="chestData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="heartData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="abdomenData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="extremitiesData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="pulsesData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="skinData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="neurologicData" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="peLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Physical Examination:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="patientIDLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Patient ID:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="generalLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="General:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="headLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Head/Face/Hair:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="eyesLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Eyes:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="earsLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ears:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="noseLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nose:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="oralLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Oral Cavity:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="peTypeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="APAS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel10">
+    </Component>
+    <Component class="javax.swing.JLabel" name="neckLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Neck and Thyroid:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lymphLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Lymph Nodes:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="chestLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Chest and Lungs:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="heartLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Heart:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="abdomenLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Abdomen:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="extremitiesLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Extremities:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="throatLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Throat:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="skinLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Skin:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="neurologicLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Neurologic:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="pulsesLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Pulses:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="generalData">
+    </Component>
+    <Component class="javax.swing.JTextField" name="earsData">
+    </Component>
+    <Component class="javax.swing.JTextField" name="noseData">
+    </Component>
+    <Component class="javax.swing.JLabel" name="patientIDData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[patientID]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="caseNumLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Case Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="caseNumData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[caseNum]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="backBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="recordDateLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date Recorded:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="modifyDateLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Date Modified:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="recordDateData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[dd/MM/yyyy]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="modifyDateData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[dd/MM/yyyy]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="headData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[head]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="eyesData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[eyes]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="neckData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[neck]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lymphData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[lymph]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="chestData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[chest]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="neurologicData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[neurologic]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="skinData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[skin]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="pulsesData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[pulses]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="extremitiesData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[extremities]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="abdomenData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[abdomen]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="heartData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[heart]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="oralData">
+    </Component>
+    <Component class="javax.swing.JTextField" name="throatData">
+    </Component>
+  </SubComponents>
+</Form>
