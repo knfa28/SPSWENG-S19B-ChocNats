@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JSpinner" name="jSpinner1">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="referralTxtbx" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                      <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="cancelBtn" min="-2" pref="80" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="addressLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="regionLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cityLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cityTxtbx" max="32767" attributes="0"/>
+                          <Component id="regionTxtbx" alignment="0" max="32767" attributes="0"/>
+                          <Component id="addressTxtbx" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="numberLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="numberTxtbx" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="emailLabel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Component id="emailTxtbx" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="referralLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="contactsLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="titleLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="fNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="ageLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="sexLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bCountryLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="bDateLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="daySpinner" min="-2" pref="48" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="monthSpinner" min="-2" pref="48" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="yearSpinner" min="-2" pref="56" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="patientIDData" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lNameTxtbx" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="ageTxtbx" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="sexCombo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="bCountryTxtbx" max="32767" attributes="0"/>
+                                  <Component id="fNameTxtbx" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="statusTxtbx" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="titleLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="patientIDData" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="fNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="fNameTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lNameTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ageLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ageTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="sexLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sexCombo" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="bCountryLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="bCountryTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="bDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="yearSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="daySpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="monthSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="statusTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="contactsLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="addressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="addressTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cityTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="regionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="regionTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="numberLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numberTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="emailTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
+              <Component id="referralLabel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="referralTxtbx" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cancelBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="registerBtn" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="titleLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Register Patient:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="patientIDData">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="[patientID]"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="fNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="First Name:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Last Name:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ageLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Age:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="sexLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sex:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="contactsLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contact Details:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fNameTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="lNameTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ageTxtbx">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="sexCombo">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Male&quot;, &quot;Female&quot;, &quot;Other&quot;})" type="code"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="addressLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Address Line:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="cityLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="City:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="regionLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Region:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="numberLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Contact Number:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="emailLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Email Address:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="referralLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Source of Referral:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="addressTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="numberTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="emailTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="referralTxtbx">
+    </Component>
+    <Component class="javax.swing.JButton" name="registerBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Register"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="cancelBtn">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cancel"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cityTxtbx">
+    </Component>
+    <Component class="javax.swing.JTextField" name="regionTxtbx">
+    </Component>
+    <Component class="javax.swing.JLabel" name="bDateLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Birth Date: dd/MM/yyyy"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="bCountryLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Birth Country:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="bCountryTxtbx">
+    </Component>
+    <Component class="javax.swing.JSpinner" name="daySpinner">
+    </Component>
+    <Component class="javax.swing.JSpinner" name="monthSpinner">
+    </Component>
+    <Component class="javax.swing.JSpinner" name="yearSpinner">
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Civil Status:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="statusTxtbx">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="statusTxtbxActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
