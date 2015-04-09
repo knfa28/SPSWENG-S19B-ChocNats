@@ -27,24 +27,15 @@
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="jLabel1" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="cPassLabel" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                                      <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="cancelBtn" min="-2" pref="80" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                                      <Component id="cPassTxtbx" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                              <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="cancelBtn" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="fNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lNameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -53,8 +44,9 @@
                                   <Component id="emailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="mobileNumLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="passLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cPassLabel" alignment="0" min="-2" pref="109" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" attributes="0">
                                   <Component id="emailTxtbx" min="-2" pref="164" max="-2" attributes="0"/>
                                   <Component id="passTxtbx" min="-2" pref="164" max="-2" attributes="0"/>
@@ -63,6 +55,7 @@
                                   <Component id="fNameTxtbx" min="-2" pref="164" max="-2" attributes="0"/>
                                   <Component id="typeCombo" min="-2" pref="164" max="-2" attributes="0"/>
                                   <Component id="employeeIDData" min="-2" pref="164" max="-2" attributes="0"/>
+                                  <Component id="cPassTxtbx" alignment="0" min="-2" pref="164" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -114,11 +107,11 @@
                   <Component id="passLabel" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cPassTxtbx" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cPassLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="cPassLabel" min="-2" max="-2" attributes="0"/>
+                  <Component id="cPassTxtbx" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="registerBtn" min="-2" max="-2" attributes="0"/>
                   <Component id="cancelBtn" alignment="0" min="-2" max="-2" attributes="0"/>
