@@ -1,0 +1,7 @@
+<Project id="8e4388f4-1e22-102e-807a-d858d9c57c64" name="FoodAllergy" location="F:\Mi-anne Castor's Files\Clinical Epidemiology\CE 223\FoodAllergy" description="Food Allergy Database" schemaVersion="102" epiVersion="" createDate="02/28/2014 12:52:26" useMetadataDbForCollectedData="" useBackgroundOnAllPages="False">
+  <CollectedData>
+    <Database connectionString="zHDkaR2yI5Pbh2/LYHfZ7ljYKFwMFLb6TrxCvYEORi6YrxL5fNN9mSjb1UG7SqC6qDDz7bEyEaTrjq+gM2OesYzI53wN0Kp2MLYvdHOxvohlV6cSVKD9tHcCDdABLbx6MWxXHrMhYjoF1kLFZyd+wHLUB01TUSv55vYs6x3HIPEksTTH0D7DbJVSjk6ThG3F" dataDriver="Epi.Data.Office.AccessDBFactory, Epi.Data.Office" />
+  </CollectedData>
+  <Metadata source="2" />
+  <EnterMakeviewInterpreter source="Epi.Core.EnterInterpreter" />
+</Project>
