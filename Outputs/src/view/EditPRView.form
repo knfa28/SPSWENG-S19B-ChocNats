@@ -78,20 +78,20 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="daySpinner" min="-2" pref="48" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="monthSpinner" min="-2" pref="48" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="yearSpinner" min="-2" pref="56" max="-2" attributes="0"/>
-                                  </Group>
                                   <Component id="patientIDData" min="-2" max="-2" attributes="0"/>
                                   <Component id="lNameTxtbx" alignment="0" max="32767" attributes="0"/>
                                   <Component id="ageTxtbx" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="sexCombo" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="sexCombo" alignment="0" pref="166" max="32767" attributes="0"/>
                                   <Component id="bCountryTxtbx" max="32767" attributes="0"/>
                                   <Component id="fNameTxtbx" alignment="0" max="32767" attributes="0"/>
                                   <Component id="statusTxtbx" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="dayComboBox" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="monthComboBox" min="-2" pref="44" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="yearComboBox" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -138,9 +138,9 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="bDateLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="yearSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="daySpinner" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="monthSpinner" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="dayComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="monthComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="yearComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -232,7 +232,7 @@
     <Component class="javax.swing.JComboBox" name="sexCombo">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Male&quot;, &quot;Female&quot;, &quot;Other&quot;})" type="code"/>
+          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { &quot;Male&quot;, &quot;Female&quot;})" type="code"/>
         </Property>
       </Properties>
     </Component>
@@ -300,12 +300,6 @@
     </Component>
     <Component class="javax.swing.JTextField" name="bCountryTxtbx">
     </Component>
-    <Component class="javax.swing.JSpinner" name="daySpinner">
-    </Component>
-    <Component class="javax.swing.JSpinner" name="monthSpinner">
-    </Component>
-    <Component class="javax.swing.JSpinner" name="yearSpinner">
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Civil Status:"/>
@@ -314,6 +308,48 @@
     <Component class="javax.swing.JTextField" name="statusTxtbx">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="statusTxtbxActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="dayComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dayComboBoxActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="monthComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="yearComboBox">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="Item 1"/>
+            <StringItem index="1" value="Item 2"/>
+            <StringItem index="2" value="Item 3"/>
+            <StringItem index="3" value="Item 4"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="yearComboBoxActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

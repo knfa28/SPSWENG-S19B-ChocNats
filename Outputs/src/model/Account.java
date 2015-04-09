@@ -12,9 +12,8 @@ public class Account
     private String mobNum;
     private String email;
     private String registerDate;
-    private ArrayList<String> specializations;
     
-    public Account( String userID, String password, String fName, String lName, String type, String mobNum, String email, String registerDate)
+    public Account(String  userID, String password, String fName, String lName, String type, String mobNum, String email, String registerDate)
     {
         this.userID = userID;
         this.password = password;
@@ -24,8 +23,6 @@ public class Account
         this.mobNum = mobNum;
         this.email = email;
         this.registerDate = registerDate;
-        
-        this.specializations = new ArrayList<String>();
     }
     
     public String getUserID()
@@ -51,16 +48,6 @@ public class Account
     public String getType()
     {
         return type;
-    }
-    
-    public void addSpecialization(String specialization)
-    {
-        specializations.add(specialization);
-    }
-    
-    public ArrayList<String> getSpecializations()
-    {
-        return specializations;
     }
     
     public String getMobNum()

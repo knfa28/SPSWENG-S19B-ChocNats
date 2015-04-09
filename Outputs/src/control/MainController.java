@@ -34,8 +34,8 @@ public class MainController
         phView = new PhysicianView(this);
         AccountsModel.delete("Admin");
         AccountsModel.delete("Doctor");
-        AccountsModel.add(new Account("Admin","1234", "The", "Admin", "Administrator", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
-        AccountsModel.add(new Account("Doctor","1234", "The", "Admin", "Physician", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
+        AccountsModel.add(new Account("The_Admin","1234", "The", "Admin", "Administrator", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
+        AccountsModel.add(new Account("The_Doctor","1234", "The", "Doctor", "Physician", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
         
     }
     
@@ -63,7 +63,6 @@ public class MainController
         
         if(currentAccount != null) 
         {
-            System.out.println("Setting it to visible");
             updateAccounts();
             phView.updateAccount(currentAccount);
             phView.SetVisible(true);
@@ -155,16 +154,7 @@ public class MainController
        EditAcctView view = new EditAcctView(this, true);
        view.setAccountToModify(currentAccount);
     }
-    
-    public void addSpecialty(String specialty)
-    {
-        if(currentAccount != null)
-        {
-            currentAccount.addSpecialization(specialty);
-            AccountsModel.set(currentAccount);
-        }
-        phView.addSpecialty(specialty);
-    }
+
     
     public void updateAccounts()
     {
@@ -256,15 +246,9 @@ public class MainController
         updateRecords();    
     }
     
-    public void createIllnessRecord(String caseNumber, String patientID, String physicianID, String illnessName, String type, /*String diagnostics, String therapeutics,*/ String dateTaken, String comebackDate, PhysicalExam pExam)
+    public void createIllnessRecord(String caseNumber, String patientID, String physicianID, String illnessName, String dateTaken, String comebackDate, PhysicalExam pExam)
     {
-        IRBuilder = new IllnessRecordBuilder(caseNumber, patientID, physicianID, illnessName, type/*, diagnostics, therapeutics*/, dateTaken, comebackDate);
-    }
-    
-    public void addPhysicalExam(String patientID, String caseNumber, Date recordDate, float height, float weight, float temperature, String bloodPressure)
-    {
-        IRBuilder.addPhysicalExam(new PhysicalExam(patientID, caseNumber, recordDate, height, weight, temperature, bloodPressure));
-        
+        IRBuilder = new IllnessRecordBuilder(caseNumber, patientID, physicianID, illnessName, dateTaken, comebackDate);
     }
     
     public boolean addCurrentIllnessRecord()

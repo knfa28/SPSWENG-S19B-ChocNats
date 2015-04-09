@@ -31,11 +31,6 @@ public class AcctView extends javax.swing.JFrame {
         mobileNumData.setText(currentAccount.getMobNum());
         emailData.setText(currentAccount.getEmail());
         backData.addActionListener(new cancelActionListener());
-        ArrayList<String> specialty = currentAccount.getSpecializations();
-        for(int i = 0; i < specialty.size(); i++)
-        {
-            specialtiesCombo.addItem(specialty.get(i));
-        }
         this.setResizable(false);
         setLocationRelativeTo(null);  
         setVisible(true);
@@ -58,8 +53,6 @@ public class AcctView extends javax.swing.JFrame {
         typeData = new javax.swing.JLabel();
         nameLabel = new javax.swing.JLabel();
         nameData = new javax.swing.JLabel();
-        specialtiesLabel = new javax.swing.JLabel();
-        specialtiesCombo = new javax.swing.JComboBox();
         contactLabel = new javax.swing.JLabel();
         mobileNumLabel = new javax.swing.JLabel();
         mobileNumData = new javax.swing.JLabel();
@@ -81,10 +74,6 @@ public class AcctView extends javax.swing.JFrame {
         nameLabel.setText("Name:");
 
         nameData.setText("[lastName + firstName]");
-
-        specialtiesLabel.setText("Specialties:");
-
-        specialtiesCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { }));
 
         contactLabel.setText("Contact Details:");
 
@@ -127,10 +116,6 @@ public class AcctView extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(mobileNumData))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(specialtiesLabel)
-                                .addGap(29, 29, 29)
-                                .addComponent(specialtiesCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(typeLabel)
                                     .addComponent(nameLabel)
@@ -149,7 +134,7 @@ public class AcctView extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(titleLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(employeeIDLabel)
                     .addComponent(employeeIDData))
@@ -161,11 +146,7 @@ public class AcctView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel)
                     .addComponent(nameData))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(specialtiesLabel)
-                    .addComponent(specialtiesCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(27, 27, 27)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(contactLabel)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -175,7 +156,7 @@ public class AcctView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(emailLabel)
                     .addComponent(emailData))
-                .addGap(29, 29, 29)
+                .addGap(69, 69, 69)
                 .addComponent(backData)
                 .addContainerGap())
         );
@@ -199,8 +180,6 @@ public class AcctView extends javax.swing.JFrame {
     private javax.swing.JLabel mobileNumLabel;
     private javax.swing.JLabel nameData;
     private javax.swing.JLabel nameLabel;
-    private javax.swing.JComboBox specialtiesCombo;
-    private javax.swing.JLabel specialtiesLabel;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JLabel typeData;
     private javax.swing.JLabel typeLabel;

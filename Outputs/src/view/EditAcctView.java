@@ -20,6 +20,8 @@ public class EditAcctView extends javax.swing.JFrame
 {
     private Account currentAccount;
     private boolean isEditing;
+    private String fName;
+    private String lName;
     private MainController control;
     public EditAcctView(MainController control, boolean isEditing) {
         try {
@@ -32,6 +34,8 @@ public class EditAcctView extends javax.swing.JFrame
         } catch (Exception e) {}
         this.control = control;
         this.isEditing = isEditing;
+        fName = "";
+        lName = "";
         initComponents();
         registerBtn.addActionListener(new registerBtnActionListener());
         cancelBtn.addActionListener(new cancelActionListener());
@@ -69,6 +73,11 @@ public class EditAcctView extends javax.swing.JFrame
             cPassTxtbx.setText(password);
             passTxtbx.setText(password);
         }
+    }
+    
+    private void setAccountID(String fName, String lName)
+    {
+        employeeIDData.setText(fName + "_" + lName);
     }
     
     class registerBtnActionListener implements ActionListener
@@ -188,7 +197,25 @@ public class EditAcctView extends javax.swing.JFrame
 
         cancelBtn.setText("Cancel");
 
+        lNameTxtbx.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                lNameTxtbxKeyReleased(evt);
+            }
+        });
+
         typeCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Secretary", "Physician", "Researcher"}));
+
+        fNameTxtbx.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                fNameTxtbxKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                fNameTxtbxKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                fNameTxtbxKeyTyped(evt);
+            }
+        });
 
         mobileNumLabel.setText("Contact Number:");
 
@@ -272,6 +299,24 @@ public class EditAcctView extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void fNameTxtbxKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fNameTxtbxKeyTyped
+
+    }//GEN-LAST:event_fNameTxtbxKeyTyped
+
+    private void fNameTxtbxKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fNameTxtbxKeyPressed
+
+    }//GEN-LAST:event_fNameTxtbxKeyPressed
+
+    private void fNameTxtbxKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fNameTxtbxKeyReleased
+        fName = fNameTxtbx.getText();
+        setAccountID(fName,lName);
+    }//GEN-LAST:event_fNameTxtbxKeyReleased
+
+    private void lNameTxtbxKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_lNameTxtbxKeyReleased
+        lName = lNameTxtbx.getText();
+        setAccountID(fName,lName);
+    }//GEN-LAST:event_lNameTxtbxKeyReleased
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

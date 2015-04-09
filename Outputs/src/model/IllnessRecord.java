@@ -6,44 +6,45 @@ import java.util.HashMap;
 
 public class IllnessRecord 
 {
-    private String caseNumber;
+    private String recordID;
     private String patientID;
     private String physicianID;
     private String illnessName;
-    private String type;
-    private String diagnostics;
-    private String therapeutics;
     private String dateTaken;
     private String comebackDate;
     private String dateModified;
-    private ArrayList<FollowUpRecord> followup;
-    private HashMap Parts;
+    private ArrayList<Attribute> attributes;
     
-    public IllnessRecord(String caseNumber, String patientID, String physicianID, String illnessName, String type, /*String diagnostics, String therapeutics,*/ String dateTaken, String comebackDate)
+    public IllnessRecord(String recordID, String patientID, String physicianID, String illnessName,String dateTaken, String comebackDate)
     {
-        this.caseNumber = caseNumber;
+        this.recordID = recordID;
         this.patientID = patientID;
         this.physicianID = physicianID;
         this.illnessName = illnessName;
-        this.type = type;
         //this.diagnostics = diagnostics;
         //this.therapeutics = therapeutics;
         this.dateTaken = dateTaken;
         this.comebackDate = comebackDate;
         this.dateModified = dateTaken;
-        followup = new ArrayList<FollowUpRecord>();
-        Parts = new HashMap();
+        attributes = new ArrayList<Attribute>();
     }
     
-    public void addPart(Part part, String instanceOf)
+    public void addAttribute(Attribute newAttribute)
     {
-            Parts.put(instanceOf, part);
+        attributes.add(newAttribute);
     }
     
-    public PhysicalExam getPhysicalExam()
+    public ArrayList<Attribute> getAttributesByPage(int pageNum)
     {
-        String instance = "PhysicalExam";
-        return (PhysicalExam)Parts.get(instance);
+        ArrayList<Attribute> result = new ArrayList<Attribute>();
+        for(int i = 0; i < attributes.size(); i ++)
+        {
+            if(attributes.get(i).getPageNum() == pageNum)
+            {
+                result.add(attributes.get(i));
+            }
+        }
+        return result;
     }
     
     public String getDateModified()
@@ -55,11 +56,15 @@ public class IllnessRecord
     {
         dateModified = newDate;
     }
-    
-    public String getCaseNumber()
-    {
-        return caseNumber;
+
+    public String getRecordID() {
+        return recordID;
     }
+
+    public void setRecordID(String recordID) {
+        this.recordID = recordID;
+    }
+    
     
     public String getPhysicianID()
     {
@@ -76,21 +81,6 @@ public class IllnessRecord
         return illnessName;
     }
     
-    public String getType()
-    {
-        return type;
-    }
-    
-    public String getDiagnostics()
-    {
-        return diagnostics;
-    }
-    
-    public String getTherapeutics()
-    {
-        return therapeutics;
-    }
-    
     public String getDateTaken()
     {
         return dateTaken;
@@ -100,16 +90,7 @@ public class IllnessRecord
     {
         return comebackDate;
     }
-    
-    public void addFollowUpRecord(FollowUpRecord record)
-    {
-        followup.add(record);
-    }
-    
-    public ArrayList<FollowUpRecord> getFollowUpRecords()
-    {
-        return followup;
-    }
+
     
     
 }

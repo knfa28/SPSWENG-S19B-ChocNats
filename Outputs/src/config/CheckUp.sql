@@ -151,7 +151,6 @@ CREATE TABLE `illness_record` (
   `employeeID` varchar(11) NOT NULL,
   `patientID` varchar(11) NOT NULL,
   `name` varchar(45) NOT NULL,
-  `type` varchar(45) NOT NULL,
   `recordDate` varchar(45) NOT NULL,
   `modifyDate` varchar(45) NOT NULL,
   `checkupDate` varchar(45) NOT NULL,

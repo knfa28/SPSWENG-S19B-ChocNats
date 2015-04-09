@@ -1,1 +1,1 @@
-jdbc:mysql://localhost:3306/, CheckUp, com.mysql.jdbc.Driver, root, 11337974
+jdbc:mysql://localhost:3306/, CheckUp, com.mysql.jdbc.Driver, root, 12345

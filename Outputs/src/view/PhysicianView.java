@@ -31,7 +31,6 @@ public class PhysicianView extends javax.swing.JFrame {
         initComponents();
         patientsList.setModel(Str);
         physiciansList.setModel(Phy);
-        addSpecBtn.addActionListener( new addSpecialtyActionListener());
         registerPatientBtn.addActionListener(new registerPntBtnActionListener());
         viewBtn.addActionListener(new viewBtnActionListener());
         editAccntBtn.addActionListener(new editAccntBtnActionListener());
@@ -52,12 +51,6 @@ public class PhysicianView extends javax.swing.JFrame {
         mobileNumData.setText(currentAccount.getMobNum());
         emailData.setText(currentAccount.getEmail());
         registerDateData.setText(currentAccount.getRegisterDate());
-        ArrayList<String> specializations = currentAccount.getSpecializations();
-        specialtiesCombo.removeAllItems();
-        for(int i = 0; i < specializations.size(); i++)
-        {
-            specialtiesCombo.addItem(specializations.get(i));
-        }
     }
     
     public void addPatient(PatientRecord patient)
@@ -69,11 +62,7 @@ public class PhysicianView extends javax.swing.JFrame {
     {
        setVisible(visibility);
     }
-    
-    public void addSpecialty(String specialty)
-    {
-        specialtiesCombo.addItem(specialty);
-    }
+
 
     public void updatePatients(ArrayList<PatientRecord> all) {
         Str.removeAllElements();
@@ -116,18 +105,6 @@ public class PhysicianView extends javax.swing.JFrame {
         public void actionPerformed(ActionEvent e) 
         {
             control.editAccount();
-        }
-        
-    }
-    
-    class addSpecialtyActionListener implements ActionListener
-    {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            String specialization = JOptionPane.showInputDialog("Specialization: ");
-            control.addSpecialty(specialization);
-            
         }
         
     }
@@ -184,10 +161,7 @@ public class PhysicianView extends javax.swing.JFrame {
         registerDateLabel = new javax.swing.JLabel();
         registerDateData = new javax.swing.JLabel();
         logoutBtn = new javax.swing.JButton();
-        specialtiesLabel = new javax.swing.JLabel();
-        specialtiesCombo = new javax.swing.JComboBox();
         editAccntBtn = new javax.swing.JButton();
-        addSpecBtn = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         searchLabel = new javax.swing.JLabel();
         searchCombo = new javax.swing.JComboBox();
@@ -255,18 +229,12 @@ public class PhysicianView extends javax.swing.JFrame {
             }
         });
 
-        specialtiesLabel.setText("Specialties:");
-
-        specialtiesCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] {  }));
-
         editAccntBtn.setText("Edit Account");
         editAccntBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 editAccntBtnActionPerformed(evt);
             }
         });
-
-        addSpecBtn.setText("Add Specialization");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -277,44 +245,36 @@ public class PhysicianView extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(typeLabel)
                             .addComponent(employeeIDLabel)
                             .addComponent(nameLabel))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(employeeIDData)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 212, Short.MAX_VALUE)
-                                        .addComponent(registerDateLabel))
-                                    .addComponent(typeData))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(registerDateData))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(nameData)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 317, Short.MAX_VALUE)
+                        .addComponent(registerDateLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(registerDateData))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(contactsLabel)
+                            .addComponent(editAccntBtn)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(mobileNumLabel)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(mobileNumData))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(typeLabel)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(employeeIDData)
+                                    .addComponent(typeData)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(editAccntBtn)
-                                    .addComponent(mobileNumLabel)
+                                    .addComponent(contactsLabel)
                                     .addComponent(emailLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGap(20, 20, 20)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(emailData)
-                                    .addComponent(mobileNumData)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(specialtiesLabel)
-                                .addGap(33, 33, 33)
-                                .addComponent(specialtiesCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(addSpecBtn)))
+                                    .addComponent(nameData))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -322,35 +282,32 @@ public class PhysicianView extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(employeeIDLabel)
-                    .addComponent(employeeIDData)
-                    .addComponent(registerDateLabel)
-                    .addComponent(registerDateData))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(employeeIDLabel)
+                            .addComponent(registerDateLabel)
+                            .addComponent(registerDateData))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(typeLabel)
+                            .addComponent(typeData))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nameLabel)
+                            .addComponent(nameData))
+                        .addGap(18, 18, 18)
+                        .addComponent(contactsLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(mobileNumLabel)
+                            .addComponent(mobileNumData)))
+                    .addComponent(employeeIDData))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(typeLabel)
-                    .addComponent(typeData))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameLabel)
-                    .addComponent(nameData))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(specialtiesLabel)
-                    .addComponent(specialtiesCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(addSpecBtn))
-                .addGap(22, 22, 22)
-                .addComponent(contactsLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(mobileNumData)
-                    .addComponent(mobileNumLabel))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(emailLabel)
-                    .addComponent(emailData))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 133, Short.MAX_VALUE)
+                    .addComponent(emailData, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 174, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(logoutBtn)
                     .addComponent(editAccntBtn))
@@ -543,7 +500,7 @@ public class PhysicianView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Physicians", jPanel4);
+        jTabbedPane1.addTab("Accounts", jPanel4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -625,7 +582,6 @@ public class PhysicianView extends javax.swing.JFrame {
     }//GEN-LAST:event_search2BtnActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addSpecBtn;
     private javax.swing.JLabel contactsLabel;
     private javax.swing.JButton editAccntBtn;
     private javax.swing.JLabel emailData;
@@ -664,8 +620,6 @@ public class PhysicianView extends javax.swing.JFrame {
     private javax.swing.JComboBox sort2Combo;
     private javax.swing.JLabel sort2Label;
     private javax.swing.JLabel sortLabel;
-    private javax.swing.JComboBox specialtiesCombo;
-    private javax.swing.JLabel specialtiesLabel;
     private javax.swing.JLabel typeData;
     private javax.swing.JLabel typeLabel;
     private javax.swing.JButton view2Btn;

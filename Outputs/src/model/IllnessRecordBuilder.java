@@ -9,34 +9,30 @@ public class IllnessRecordBuilder
     private String patientID;
     private String physicianID;
     private String illnessName;
-    private String type;
-    private String diagnostics;
-    private String therapeutics;
     private String dateTaken;
     private String comebackDate;
     private String dateModified;
-    private PhysicalExam pExam;
-    private ArrayList<FollowUpRecord> followup;
     private IllnessRecord illnessRecord;
+    private ArrayList<Attribute> attributes;
     
-    public IllnessRecordBuilder(String caseNumber, String patientID, String physicianID, String illnessName, String type, /*String diagnostics, String therapeutics,*/ String dateTaken, String comebackDate)
+    public IllnessRecordBuilder(String caseNumber, String patientID, String physicianID, String illnessName, String dateTaken, String comebackDate)
     {
         this.caseNumber = caseNumber;
         this.patientID = patientID;
         this.physicianID = physicianID;
         this.illnessName = illnessName;
-        this.type = type;
-        //this.diagnostics = diagnostics;
-        //this.therapeutics = therapeutics;
         this.dateTaken = dateTaken;
         this.comebackDate = comebackDate;
         this.dateModified = dateTaken;
-        this.illnessRecord = new IllnessRecord(caseNumber, patientID, physicianID, illnessName, type, /*String diagnostics, String therapeutics,*/ dateTaken, comebackDate);
+        attributes = new ArrayList<Attribute>();
+        this.illnessRecord = new IllnessRecord(caseNumber, patientID, physicianID, illnessName, dateTaken, comebackDate);
     }
     
-    public void addPhysicalExam(PhysicalExam pExam)
+    public void createPage1(/*Page 1 parameters*/)
     {
-        illnessRecord.addPart(pExam, "PhysicalExam");        
+        //Create attributes for page 1
+        
+        //add attributes to the illness record
     }
     
     public IllnessRecord build()

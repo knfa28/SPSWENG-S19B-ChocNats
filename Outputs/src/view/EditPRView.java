@@ -37,6 +37,29 @@ public class EditPRView extends javax.swing.JFrame {
         setLocationRelativeTo(null);  
         setVisible(true);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        
+        //initialize birthday combo boxes
+        yearComboBox.removeAllItems();
+        monthComboBox.removeAllItems();
+        dayComboBox.removeAllItems();
+        for(int i = 1900; i <= Calendar.getInstance().get(Calendar.YEAR); i++ )
+        {
+            yearComboBox.addItem(i);
+        }
+        yearComboBox.setSelectedItem(Calendar.getInstance().get(Calendar.YEAR));
+        
+        for(int i = 1; i <= 12; i++)
+        {
+            monthComboBox.addItem(i);
+        }
+        
+        for(int i = 1; i <= 28; i++)
+        {
+            dayComboBox.addItem(i);
+        }
+        
+        
+        
     }
     
     public void setRecordToModify(PatientRecord record)
@@ -93,9 +116,9 @@ public class EditPRView extends javax.swing.JFrame {
                 sex = 'F';
            }
             
-            int year = (int) yearSpinner.getValue();
-            int day = (int) daySpinner.getValue();
-            int month = (int) monthSpinner.getValue();
+            int year = (int) yearComboBox.getSelectedItem();
+            int day = (int) dayComboBox.getSelectedItem();
+            int month = (int) monthComboBox.getSelectedItem();
 			
 			if( year == 0 && day == 0 && month == 0)
 			{
@@ -207,11 +230,11 @@ public class EditPRView extends javax.swing.JFrame {
         bDateLabel = new javax.swing.JLabel();
         bCountryLabel = new javax.swing.JLabel();
         bCountryTxtbx = new javax.swing.JTextField();
-        daySpinner = new javax.swing.JSpinner();
-        monthSpinner = new javax.swing.JSpinner();
-        yearSpinner = new javax.swing.JSpinner();
         jLabel1 = new javax.swing.JLabel();
         statusTxtbx = new javax.swing.JTextField();
+        dayComboBox = new javax.swing.JComboBox();
+        monthComboBox = new javax.swing.JComboBox();
+        yearComboBox = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -229,7 +252,7 @@ public class EditPRView extends javax.swing.JFrame {
 
         contactsLabel.setText("Contact Details:");
 
-        sexCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female", "Other"}));
+        sexCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Male", "Female"}));
 
         addressLabel.setText("Address Line:");
 
@@ -256,6 +279,22 @@ public class EditPRView extends javax.swing.JFrame {
         statusTxtbx.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 statusTxtbxActionPerformed(evt);
+            }
+        });
+
+        dayComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        dayComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dayComboBoxActionPerformed(evt);
+            }
+        });
+
+        monthComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        yearComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        yearComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                yearComboBoxActionPerformed(evt);
             }
         });
 
@@ -307,19 +346,19 @@ public class EditPRView extends javax.swing.JFrame {
                                     .addComponent(jLabel1))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(daySpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(monthSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(yearSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(patientIDData)
                                     .addComponent(lNameTxtbx)
                                     .addComponent(ageTxtbx)
-                                    .addComponent(sexCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(sexCombo, 0, 166, Short.MAX_VALUE)
                                     .addComponent(bCountryTxtbx)
                                     .addComponent(fNameTxtbx)
-                                    .addComponent(statusTxtbx))))
+                                    .addComponent(statusTxtbx)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(dayComboBox, 0, 1, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(monthComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -353,9 +392,9 @@ public class EditPRView extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(bDateLabel)
-                    .addComponent(yearSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(daySpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(monthSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(dayComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(monthComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -399,6 +438,14 @@ public class EditPRView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_statusTxtbxActionPerformed
 
+    private void dayComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dayComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dayComboBoxActionPerformed
+
+    private void yearComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yearComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_yearComboBoxActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel addressLabel;
@@ -412,7 +459,7 @@ public class EditPRView extends javax.swing.JFrame {
     private javax.swing.JLabel cityLabel;
     private javax.swing.JTextField cityTxtbx;
     private javax.swing.JLabel contactsLabel;
-    private javax.swing.JSpinner daySpinner;
+    private javax.swing.JComboBox dayComboBox;
     private javax.swing.JLabel emailLabel;
     private javax.swing.JTextField emailTxtbx;
     private javax.swing.JLabel fNameLabel;
@@ -421,7 +468,7 @@ public class EditPRView extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel lNameLabel;
     private javax.swing.JTextField lNameTxtbx;
-    private javax.swing.JSpinner monthSpinner;
+    private javax.swing.JComboBox monthComboBox;
     private javax.swing.JLabel numberLabel;
     private javax.swing.JTextField numberTxtbx;
     private javax.swing.JLabel patientIDData;
@@ -434,6 +481,6 @@ public class EditPRView extends javax.swing.JFrame {
     private javax.swing.JLabel sexLabel;
     private javax.swing.JTextField statusTxtbx;
     private javax.swing.JLabel titleLabel;
-    private javax.swing.JSpinner yearSpinner;
+    private javax.swing.JComboBox yearComboBox;
     // End of variables declaration//GEN-END:variables
 }

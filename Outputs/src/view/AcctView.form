@@ -44,11 +44,6 @@
                               <Component id="mobileNumData" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="specialtiesLabel" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="specialtiesCombo" min="-2" pref="112" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="typeLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="nameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -75,7 +70,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="titleLabel" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="employeeIDLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="employeeIDData" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -90,12 +85,7 @@
                   <Component id="nameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="nameData" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="specialtiesLabel" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="specialtiesCombo" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="contactLabel" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -107,7 +97,7 @@
                   <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="emailData" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
               <Component id="backData" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -143,18 +133,6 @@
     <Component class="javax.swing.JLabel" name="nameData">
       <Properties>
         <Property name="text" type="java.lang.String" value="[lastName + firstName]"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="specialtiesLabel">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Specialties:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JComboBox" name="specialtiesCombo">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-          <Connection code="new javax.swing.DefaultComboBoxModel(new String[] { })" type="code"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="contactLabel">
