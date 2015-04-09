@@ -32,6 +32,10 @@ public class EditPRView extends javax.swing.JFrame {
         this.isEditing = isEditing;
         this.setResizable(false);
         initComponents();
+        if(this.isEditing)
+        {
+            jLabel2.setText("Edit Patient");
+        }
         cancelBtn.addActionListener(new cancelActionListener());
         registerBtn.addActionListener(new registerBtnActionListener());
         setLocationRelativeTo(null);  
@@ -120,7 +124,7 @@ public class EditPRView extends javax.swing.JFrame {
             int day = (int) dayComboBox.getSelectedItem();
             int month = (int) monthComboBox.getSelectedItem();
 			
-			if( year == 0 && day == 0 && month == 0)
+			/*if( year == 0 && day == 0 && month == 0)
 			{
             	valid = false;
                JOptionPane.showMessageDialog(null, "Please input birthday!");
@@ -145,7 +149,7 @@ public class EditPRView extends javax.swing.JFrame {
 		            JOptionPane.showMessageDialog(null, "Invalid day: " + day);
 				}
 				
-			}
+			}*/
 			
 			if(!(fNameTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) || !(lNameTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) || !(statusTxtbx.getText().matches("[a-zA-Z]+")) || !(cityTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) || !(regionTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) || !(referralTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) )
 			{
@@ -185,6 +189,10 @@ public class EditPRView extends javax.swing.JFrame {
 	            {
 	                if(control.modifyPatientRecord(patientIDData.getText(), Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH), record.getRecordDate(), fNameTxtbx.getText(), lNameTxtbx.getText(), Integer.parseInt(ageTxtbx.getText()), sex, birthday, bCountryTxtbx.getText(),statusTxtbx.getText(), referralTxtbx.getText(), addressTxtbx.getText(), cityTxtbx.getText(), regionTxtbx.getText(), numberTxtbx.getText(), emailTxtbx.getText()))
 	                	System.out.println("Patient Modified");
+                        else
+                        {
+                            JOptionPane.showMessageDialog(null, "Unable to crate Account");
+                        }
 	            }
 	            else
 	            {
@@ -192,6 +200,7 @@ public class EditPRView extends javax.swing.JFrame {
 	                System.out.println("Patient Added");
 	            }
             }
+            
             dispose();
         }
         
@@ -235,10 +244,11 @@ public class EditPRView extends javax.swing.JFrame {
         dayComboBox = new javax.swing.JComboBox();
         monthComboBox = new javax.swing.JComboBox();
         yearComboBox = new javax.swing.JComboBox();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        titleLabel.setText("Register Patient:");
+        titleLabel.setText("PatientID:");
 
         patientIDData.setText("[patientID]");
 
@@ -298,6 +308,9 @@ public class EditPRView extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jLabel2.setText("Register Patient");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -306,12 +319,6 @@ public class EditPRView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(referralTxtbx)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(registerBtn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(addressLabel)
@@ -330,6 +337,11 @@ public class EditPRView extends javax.swing.JFrame {
                         .addComponent(emailLabel)
                         .addGap(22, 22, 22)
                         .addComponent(emailTxtbx))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(registerBtn))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(referralLabel)
@@ -358,7 +370,8 @@ public class EditPRView extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(monthComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(yearComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jLabel2))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -366,6 +379,8 @@ public class EditPRView extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(titleLabel)
                     .addComponent(patientIDData))
@@ -421,14 +436,18 @@ public class EditPRView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(emailLabel)
                     .addComponent(emailTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(referralLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(referralTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cancelBtn)
-                    .addComponent(registerBtn)))
+                .addGap(18, 18, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(referralLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(referralTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cancelBtn)
+                            .addComponent(registerBtn))
+                        .addContainerGap())))
         );
 
         pack();
@@ -465,6 +484,7 @@ public class EditPRView extends javax.swing.JFrame {
     private javax.swing.JLabel fNameLabel;
     private javax.swing.JTextField fNameTxtbx;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel lNameLabel;
     private javax.swing.JTextField lNameTxtbx;

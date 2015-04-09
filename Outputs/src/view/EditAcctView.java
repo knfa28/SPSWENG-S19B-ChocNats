@@ -37,6 +37,10 @@ public class EditAcctView extends javax.swing.JFrame
         fName = "";
         lName = "";
         initComponents();
+        if(this.isEditing)
+        {
+            jLabel1.setText("Edit Account");
+        }
         registerBtn.addActionListener(new registerBtnActionListener());
         cancelBtn.addActionListener(new cancelActionListener());
         this.setResizable(false);
@@ -86,16 +90,25 @@ public class EditAcctView extends javax.swing.JFrame
         public void actionPerformed(ActionEvent e) 
         {
             boolean valid = true;
-
+            String errorMessage;
+            if(isEditing)
+            {
+                errorMessage = "Unable to Edit Account due to the following errors: \n\n";
+            }
+            else
+            {
+                errorMessage = "Unable to Create Account due to the following errors: \n\n";
+            }
+                
   			if(!(fNameTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+")) || !(lNameTxtbx.getText().matches("([a-zA-Z]+\\s+)*[a-zA-Z]+"))) 			{
   				valid = false;
-  				JOptionPane.showMessageDialog(null, "Invalid Input: Alphabet letters only!");
+  				errorMessage = errorMessage + "Invalid First Name: Alphabet letters only!\n";
   			}
   			
   			if(!(mobileNumTxtbx.getText().matches("[0-9]+")))
   			{
   				valid = false;
-  				JOptionPane.showMessageDialog(null, "Invalid Input: Numerical number only!");
+  				errorMessage = errorMessage + "Invalid Last Name: Numerical number only!\n";
   			}
   			
   			Pattern p = Pattern.compile(".+@.+\\.[a-z]+");
@@ -103,7 +116,7 @@ public class EditAcctView extends javax.swing.JFrame
   			boolean matchFound = m.matches();
   					if (!matchFound) {
   						valid = false;
-  						JOptionPane.showMessageDialog(null, "Invalid email address!");
+  						errorMessage = errorMessage + "Invalid email address!\n";
   					}
 
         	
@@ -123,7 +136,7 @@ public class EditAcctView extends javax.swing.JFrame
             if(!(password.equals(cpassword)))
             {
             	valid =  false;
-            	JOptionPane.showMessageDialog(null, "Passwords does not match!");
+            	errorMessage = errorMessage + "Passwords does not match!\n";
             }
             
             if(valid)
@@ -143,6 +156,10 @@ public class EditAcctView extends javax.swing.JFrame
 	                JOptionPane.showMessageDialog(null, "Age must be an integer!", "Message", JOptionPane.ERROR_MESSAGE);
 	                ex.printStackTrace();
 	            }
+            }
+            else
+            {
+                JOptionPane.showMessageDialog(null, errorMessage, "Message", JOptionPane.ERROR_MESSAGE);
             }
             dispose();
         }
@@ -178,6 +195,7 @@ public class EditAcctView extends javax.swing.JFrame
         mobileNumTxtbx = new javax.swing.JTextField();
         emailTxtbx = new javax.swing.JTextField();
         employeeIDData = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -221,44 +239,53 @@ public class EditAcctView extends javax.swing.JFrame
 
         emailLabel.setText("Email Address:");
 
+        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jLabel1.setText("Register Account");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cPassLabel)
-                            .addComponent(passLabel)
                             .addComponent(fNameLabel)
                             .addComponent(lNameLabel)
                             .addComponent(typeLabel)
                             .addComponent(titleLabel)
                             .addComponent(emailLabel)
-                            .addComponent(mobileNumLabel))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(mobileNumTxtbx, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(passTxtbx, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lNameTxtbx, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(typeCombo, javax.swing.GroupLayout.Alignment.LEADING, 0, 164, Short.MAX_VALUE)
-                            .addComponent(fNameTxtbx, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cPassTxtbx, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(emailTxtbx)
-                            .addComponent(employeeIDData))
-                        .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(mobileNumLabel)
+                            .addComponent(passLabel))
+                        .addGap(26, 26, 26)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(emailTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(passTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mobileNumTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lNameTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(fNameTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(typeCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(employeeIDData, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(2, 2, 2))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(registerBtn)
+                        .addComponent(cPassLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(registerBtn))
+                            .addComponent(cPassTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(13, 13, 13)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(titleLabel)
                     .addComponent(employeeIDData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -282,15 +309,15 @@ public class EditAcctView extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(emailLabel)
                     .addComponent(emailTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(passLabel)
-                    .addComponent(passTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cPassLabel)
-                    .addComponent(cPassTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(passTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(passLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cPassTxtbx, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cPassLabel))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(registerBtn)
                     .addComponent(cancelBtn))
@@ -328,6 +355,7 @@ public class EditAcctView extends javax.swing.JFrame
     private javax.swing.JTextField employeeIDData;
     private javax.swing.JLabel fNameLabel;
     private javax.swing.JTextField fNameTxtbx;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lNameLabel;
     private javax.swing.JTextField lNameTxtbx;
     private javax.swing.JLabel mobileNumLabel;

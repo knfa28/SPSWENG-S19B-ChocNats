@@ -50,6 +50,11 @@
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Trebuchet MS" size="14" style="0"/>
+        </Property>
+      </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
       <SubComponents>
@@ -153,7 +158,7 @@
                           <Component id="emailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="emailData" alignment="3" min="-2" pref="16" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="174" max="32767" attributes="0"/>
+                      <EmptySpace pref="172" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="logoutBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="editAccntBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -305,7 +310,7 @@
                           <Component id="viewBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="registerPatientBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                      <EmptySpace pref="25" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
