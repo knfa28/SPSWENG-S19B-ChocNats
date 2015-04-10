@@ -1,14 +1,15 @@
 package view;
 
-import model.Account;
 import control.MainController;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-
+import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
+import model.Account;
 
 public class AcctView extends javax.swing.JFrame {
     private MainController control;
@@ -25,6 +26,12 @@ public class AcctView extends javax.swing.JFrame {
         this.control = control;
         this.currentAccount = currentAccount;
         initComponents();
+        
+        if(!control.getCurrAcctType().equals("Administrator"))
+        {
+            ResetPasswordBtn.setVisible(false);
+        }
+        
         employeeIDData.setText(currentAccount.getUserID());
         typeData.setText(currentAccount.getType());
         nameData.setText(currentAccount.getFName() + " " + currentAccount.getLName());
@@ -60,6 +67,8 @@ public class AcctView extends javax.swing.JFrame {
         emailData = new javax.swing.JLabel();
         backData = new javax.swing.JButton();
         titleLabel = new javax.swing.JLabel();
+        ResetPasswordBtn = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,7 +84,7 @@ public class AcctView extends javax.swing.JFrame {
 
         nameData.setText("[lastName + firstName]");
 
-        contactLabel.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        contactLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         contactLabel.setText("Contact Details:");
 
         mobileNumLabel.setText("Contact Number:");
@@ -96,6 +105,13 @@ public class AcctView extends javax.swing.JFrame {
         titleLabel.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         titleLabel.setText("Employee Account Details");
 
+        ResetPasswordBtn.setText("Reset Password");
+        ResetPasswordBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ResetPasswordBtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -104,15 +120,8 @@ public class AcctView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(backData, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(contactLabel)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(emailLabel)
-                                .addGap(18, 18, 18)
-                                .addComponent(emailData))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(mobileNumLabel)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -127,8 +136,17 @@ public class AcctView extends javax.swing.JFrame {
                                     .addComponent(employeeIDData)
                                     .addComponent(nameData)
                                     .addComponent(typeData)))
-                            .addComponent(titleLabel))
-                        .addGap(0, 19, Short.MAX_VALUE)))
+                            .addComponent(titleLabel)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(emailLabel)
+                                .addGap(18, 18, 18)
+                                .addComponent(emailData))
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 66, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ResetPasswordBtn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(backData, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -144,13 +162,15 @@ public class AcctView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(typeLabel)
                     .addComponent(typeData))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel)
                     .addComponent(nameData))
                 .addGap(33, 33, 33)
                 .addComponent(contactLabel)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(1, 1, 1)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(mobileNumLabel)
                     .addComponent(mobileNumData))
@@ -158,9 +178,11 @@ public class AcctView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(emailLabel)
                     .addComponent(emailData))
-                .addGap(18, 18, 18)
-                .addComponent(backData)
-                .addGap(16, 16, 16))
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(backData)
+                    .addComponent(ResetPasswordBtn))
+                .addContainerGap())
         );
 
         pack();
@@ -170,14 +192,43 @@ public class AcctView extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_backDataActionPerformed
 
+    private void ResetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetPasswordBtnActionPerformed
+        String password = "";
+        String adminPassword = "";
+        JPasswordField Password = new JPasswordField();
+        JPasswordField AdminPassword = new JPasswordField();
+        char[] passwordArr;
+        Object[] passField = {
+        "New Password",Password,
+        "Admin Password", AdminPassword        
+        };
+        
+        JOptionPane.showConfirmDialog(null, passField, "Change Password", JOptionPane.DEFAULT_OPTION);
+        passwordArr = Password.getPassword();
+        for(int i = 0; i < passwordArr.length; i++)
+        {
+            password = password + passwordArr[i];
+        }
+        passwordArr = AdminPassword.getPassword();
+        for(int i = 0; i < passwordArr.length; i++)
+        {
+            adminPassword = adminPassword + passwordArr[i];
+        }
+        System.out.println("DONE!");
+        control.resetPassword(currentAccount, password, adminPassword);
+        
+    }//GEN-LAST:event_ResetPasswordBtnActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ResetPasswordBtn;
     private javax.swing.JButton backData;
     private javax.swing.JLabel contactLabel;
     private javax.swing.JLabel emailData;
     private javax.swing.JLabel emailLabel;
     private javax.swing.JLabel employeeIDData;
     private javax.swing.JLabel employeeIDLabel;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel mobileNumData;
     private javax.swing.JLabel mobileNumLabel;
     private javax.swing.JLabel nameData;

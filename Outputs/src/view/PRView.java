@@ -126,6 +126,7 @@ public class PRView extends javax.swing.JFrame
         modifyDateData = new javax.swing.JLabel();
         editBtn = new javax.swing.JButton();
         back1Btn = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
         jPanel4 = new javax.swing.JPanel();
         searchLabel = new javax.swing.JLabel();
         sortLabel = new javax.swing.JLabel();
@@ -167,6 +168,7 @@ public class PRView extends javax.swing.JFrame
 
         bDateLabel.setText("Birth Date:");
 
+        contactsLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         contactsLabel.setText("Contact Details:");
 
         addressLabel.setText("Address:");
@@ -272,7 +274,10 @@ public class PRView extends javax.swing.JFrame
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(editBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(back1Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(back1Btn, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -315,7 +320,9 @@ public class PRView extends javax.swing.JFrame
                     .addComponent(birthDateData))
                 .addGap(23, 23, 23)
                 .addComponent(contactsLabel)
-                .addGap(18, 18, 18)
+                .addGap(2, 2, 2)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(6, 6, 6)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(addressData, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(addressLabel))
@@ -331,7 +338,7 @@ public class PRView extends javax.swing.JFrame
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(referralLabel)
                     .addComponent(referralData))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(editBtn)
                     .addComponent(back1Btn))
@@ -495,6 +502,7 @@ public class PRView extends javax.swing.JFrame
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel modifyDateData;
     private javax.swing.JLabel modifyDateLabel;
     private javax.swing.JLabel nameData;

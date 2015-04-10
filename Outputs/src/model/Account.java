@@ -45,6 +45,11 @@ public class Account
         return password;
     }
     
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
+    
     public String getFName()
     {
         return fName;

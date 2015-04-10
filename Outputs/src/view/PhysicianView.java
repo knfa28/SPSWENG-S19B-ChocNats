@@ -29,6 +29,9 @@ public class PhysicianView extends javax.swing.JFrame {
         
         this.control = control;
         initComponents();
+        
+        
+        
         patientsList.setModel(Str);
         physiciansList.setModel(Phy);
         registerPatientBtn.addActionListener(new registerPntBtnActionListener());
@@ -51,6 +54,26 @@ public class PhysicianView extends javax.swing.JFrame {
         mobileNumData.setText(currentAccount.getMobNum());
         emailData.setText(currentAccount.getEmail());
         registerDateData.setText(currentAccount.getRegisterDate());
+        
+        //access modifiers
+        if(control.getCurrAcctType().equals("physician"))
+        {
+            registerPatientBtn.setVisible(false);
+        }
+        else
+        {
+            registerPatientBtn.setVisible(true);
+        }
+        
+        if(!control.getCurrAcctType().equals("Administrator"))
+        {
+            regAcctBtn.setVisible(false);
+        }
+        else
+        {
+            regAcctBtn.setVisible(true);
+        }
+        
     }
     
     public void addPatient(PatientRecord patient)
