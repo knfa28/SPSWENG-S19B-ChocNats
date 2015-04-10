@@ -7,7 +7,6 @@ import model.IllnessRecordBuilder;
 import model.IllnessRecordModel;
 import model.PatientRecord;
 import model.PatientRecordModel;
-import model.PhysicalExam;
 import model.Record;
 import model.RecordModel;
 
@@ -25,8 +24,9 @@ public class MainController
     private IllnessRecordBuilder IRBuilder;
     private PhysicianView phView;
     private PRView patientView;
+    private static MainController firstInstance;
     
-    public MainController()
+    private MainController()
     {
         currentAccount = null;
         IRBuilder = null;
@@ -37,6 +37,14 @@ public class MainController
         AccountsModel.add(new Account("The_Admin","1234", "The", "Admin", "Administrator", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
         AccountsModel.add(new Account("The_Doctor","1234", "The", "Doctor", "Physician", "09906745529", "the.admin@yahoo.com", Calendar.getInstance().get(Calendar.YEAR) + "-" + (Calendar.getInstance().get(Calendar.MONTH) + 1 ) + "-" + Calendar.getInstance().get(Calendar.DAY_OF_MONTH)));
         
+    }
+    
+    public static MainController getInstance(){
+        if(firstInstance == null){
+            firstInstance = new MainController();
+        }
+        
+        return firstInstance;
     }
     
     public String getCurrAcctType()
@@ -246,7 +254,7 @@ public class MainController
         updateRecords();    
     }
     
-    public void createIllnessRecord(String caseNumber, String patientID, String physicianID, String illnessName, String dateTaken, String comebackDate, PhysicalExam pExam)
+    public void createIllnessRecord(String caseNumber, String patientID, String physicianID, String illnessName, String dateTaken, String comebackDate)
     {
         IRBuilder = new IllnessRecordBuilder(caseNumber, patientID, physicianID, illnessName, dateTaken, comebackDate);
     }

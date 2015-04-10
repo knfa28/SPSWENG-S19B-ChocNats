@@ -12,6 +12,12 @@ package model;
  */
 public class Attribute 
 {
+    //column names
+    public static String name_col = "name";
+    public static String pageNum_col = "pageNum";
+    public static String value_col = "value";   
+    
+    
     private String name;
     private int pageNum;
     private String value;

@@ -68,22 +68,22 @@ public class PatientRecordModel
             ResultSet Records = MySQLConnector.executeQuery("SELECT * FROM patient_record P, illness_record I WHERE P.patientID = I.patientID AND I.employeeID = \"" + physicianID + "\"");
             while(Records.next())
             {
-                records.add(new PatientRecord(Records.getString("patientID"),
-                                 Records.getString("modifyDate"),
-                                 Records.getString("recordDate"),
-                                 Records.getString("firstName"),
-                                 Records.getString("lastName"),
-                                 Records.getInt("age"),
-                                 Records.getString("sex").charAt(0),
-                                 Records.getString("birthDate"),
-                                 Records.getString("birthPlace"),
-                                 Records.getString("civilStatus"),
-                                 Records.getString("referredBy"),
-                                 Records.getString("street"),
-                                 Records.getString("city"),
-                                 Records.getString("region"),
-                                 Records.getString("contactNum"),
-                                 Records.getString("email")));
+                records.add(new PatientRecord(Records.getString(PatientRecord.patientID_col),
+                                 Records.getString(PatientRecord.dateModified_col),
+                                 Records.getString(PatientRecord.recordDate_col),
+                                 Records.getString(PatientRecord.fName_col),
+                                 Records.getString(PatientRecord.lName_col),
+                                 Records.getInt(PatientRecord.age_col),
+                                 Records.getString(PatientRecord.sex_col).charAt(0),
+                                 Records.getString(PatientRecord.birthday_col),
+                                 Records.getString(PatientRecord.birthplace_col),
+                                 Records.getString(PatientRecord.status_col),
+                                 Records.getString(PatientRecord.referredBy_col),
+                                 Records.getString(PatientRecord.street_col),
+                                 Records.getString(PatientRecord.city_col),
+                                 Records.getString(PatientRecord.region_col),
+                                 Records.getString(PatientRecord.contactNum_col),
+                                 Records.getString(PatientRecord.email_col)));
             }
         } catch (SQLException ex) {
             Logger.getLogger(PatientRecordModel.class.getName()).log(Level.SEVERE, null, ex);
@@ -97,22 +97,22 @@ public class PatientRecordModel
         
         try{
             if(Records.next()){
-                return new PatientRecord(Records.getString("patientID"),
-                                 Records.getString("modifyDate"),
-                                 Records.getString("recordDate"),
-                                 Records.getString("firstName"),
-                                 Records.getString("lastName"),
-                                 Records.getInt("age"),
-                                 Records.getString("sex").charAt(0),
-                                 Records.getString("birthDate"),
-                                 Records.getString("birthPlace"),
-                                 Records.getString("civilStatus"),
-                                 Records.getString("referredBy"),
-                                 Records.getString("street"),
-                                 Records.getString("city"),
-                                 Records.getString("region"),
-                                 Records.getString("contactNum"),
-                                 Records.getString("email"));
+                return new PatientRecord(Records.getString(PatientRecord.patientID_col),
+                                 Records.getString(PatientRecord.dateModified_col),
+                                 Records.getString(PatientRecord.recordDate_col),
+                                 Records.getString(PatientRecord.fName_col),
+                                 Records.getString(PatientRecord.lName_col),
+                                 Records.getInt(PatientRecord.age_col),
+                                 Records.getString(PatientRecord.sex_col).charAt(0),
+                                 Records.getString(PatientRecord.birthday_col),
+                                 Records.getString(PatientRecord.birthplace_col),
+                                 Records.getString(PatientRecord.status_col),
+                                 Records.getString(PatientRecord.referredBy_col),
+                                 Records.getString(PatientRecord.street_col),
+                                 Records.getString(PatientRecord.city_col),
+                                 Records.getString(PatientRecord.region_col),
+                                 Records.getString(PatientRecord.contactNum_col),
+                                 Records.getString(PatientRecord.email_col));
             }
         }
         catch(Exception e){
@@ -139,22 +139,22 @@ public class PatientRecordModel
             ResultSet Records = MySQLConnector.executeQuery(statement);
             while(Records.next())
             {
-                records.add(new PatientRecord(Records.getString("patientID"),
-                                 Records.getString("modifyDate"),
-                                 Records.getString("recordDate"),
-                                 Records.getString("firstName"),
-                                 Records.getString("lastName"),
-                                 Records.getInt("age"),
-                                 Records.getString("sex").charAt(0),
-                                 Records.getString("birthDate"),
-                                 Records.getString("birthPlace"),
-                                 Records.getString("civilStatus"),
-                                 Records.getString("referredBy"),
-                                 Records.getString("street"),
-                                 Records.getString("city"),
-                                 Records.getString("region"),
-                                 Records.getString("contactNum"),
-                                 Records.getString("email")));
+                records.add(new PatientRecord(Records.getString(PatientRecord.patientID_col),
+                                 Records.getString(PatientRecord.dateModified_col),
+                                 Records.getString(PatientRecord.recordDate_col),
+                                 Records.getString(PatientRecord.fName_col),
+                                 Records.getString(PatientRecord.lName_col),
+                                 Records.getInt(PatientRecord.age_col),
+                                 Records.getString(PatientRecord.sex_col).charAt(0),
+                                 Records.getString(PatientRecord.birthday_col),
+                                 Records.getString(PatientRecord.birthplace_col),
+                                 Records.getString(PatientRecord.status_col),
+                                 Records.getString(PatientRecord.referredBy_col),
+                                 Records.getString(PatientRecord.street_col),
+                                 Records.getString(PatientRecord.city_col),
+                                 Records.getString(PatientRecord.region_col),
+                                 Records.getString(PatientRecord.contactNum_col),
+                                 Records.getString(PatientRecord.email_col)));
             }
         } catch (SQLException ex) {
             Logger.getLogger(PatientRecordModel.class.getName()).log(Level.SEVERE, null, ex);

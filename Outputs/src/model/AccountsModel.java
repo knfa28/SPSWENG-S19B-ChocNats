@@ -49,14 +49,14 @@ public class AccountsModel
         ResultSet Accounts = MySQLConnector.executeQuery("SELECT * FROM employee WHERE BINARY employeeID = \"" + userID + "\"");
         try{
             if(Accounts.next()){
-                Account account = new Account(Accounts.getString("employeeID"),
-                                 Accounts.getString("password"),
-                                 Accounts.getString("firstName"),
-                                 Accounts.getString("lastName"),
-                                 Accounts.getString("employeeType"),
-                                 Accounts.getString("mobileNum"),
-                                 Accounts.getString("email"),
-                                 Accounts.getString("registerDate"));
+                Account account = new Account(Accounts.getString(Account.userid_col),
+                                 Accounts.getString(Account.password_col),
+                                 Accounts.getString(Account.fName_col),
+                                 Accounts.getString(Account.lName_col),
+                                 Accounts.getString(Account.type_col),
+                                 Accounts.getString(Account.mobNum_col),
+                                 Accounts.getString(Account.email_col),
+                                 Accounts.getString(Account.registerDate_col));
                 return account;
             }
         }
@@ -74,14 +74,14 @@ public class AccountsModel
             ResultSet Accounts = MySQLConnector.executeQuery("SELECT * FROM employee");
             while(Accounts.next())
             {
-                records.add(new Account(Accounts.getString("employeeID"),
-                                 Accounts.getString("password"),
-                                 Accounts.getString("firstName"),
-                                 Accounts.getString("lastName"),
-                                 Accounts.getString("employeeType"),
-                                 Accounts.getString("mobileNum"),
-                                 Accounts.getString("email"),
-                                 Accounts.getString("registerDate")));
+                records.add(new Account(Accounts.getString(Account.userid_col),
+                                 Accounts.getString(Account.password_col),
+                                 Accounts.getString(Account.fName_col),
+                                 Accounts.getString(Account.lName_col),
+                                 Accounts.getString(Account.type_col),
+                                 Accounts.getString(Account.mobNum_col),
+                                 Accounts.getString(Account.email_col),
+                                 Accounts.getString(Account.registerDate_col)));
             }
         }
          catch (SQLException ex) 
@@ -105,14 +105,14 @@ public class AccountsModel
             ResultSet Accounts = MySQLConnector.executeQuery(statement);
             while(Accounts.next())
             {
-                records.add(new Account(Accounts.getString("employeeID"),
-                                 Accounts.getString("password"),
-                                 Accounts.getString("firstName"),
-                                 Accounts.getString("lastName"),
-                                 Accounts.getString("employeeType"),
-                                 Accounts.getString("mobileNum"),
-                                 Accounts.getString("email"),
-                                 Accounts.getString("registerDate")));
+                records.add(new Account(Accounts.getString(Account.userid_col),
+                                 Accounts.getString(Account.password_col),
+                                 Accounts.getString(Account.fName_col),
+                                 Accounts.getString(Account.lName_col),
+                                 Accounts.getString(Account.type_col),
+                                 Accounts.getString(Account.mobNum_col),
+                                 Accounts.getString(Account.email_col),
+                                 Accounts.getString(Account.registerDate_col)));
             }
         }
          catch (SQLException ex) 

@@ -30,14 +30,14 @@ DROP TABLE IF EXISTS `specialization`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `attribute_values` (
-  `caseNum` varchar(11) NOT NULL,
+  `recordID` varchar(11) NOT NULL,
   `attributeID` varchar(45) NOT NULL,
   `value` text,
   KEY `valueProperty_idx` (`attributeID`),
-  KEY `valueCase` (`caseNum`),
-  CONSTRAINT `attribute_values_ibfk_1` FOREIGN KEY (`caseNum`) REFERENCES `illness_record` (`caseNum`),
+  KEY `valueCase` (`recordID`),
+  CONSTRAINT `attribute_values_ibfk_1` FOREIGN KEY (`recordID`) REFERENCES `illness_record` (`recordID`),
   CONSTRAINT `valueAttribute` FOREIGN KEY (`attributeID`) REFERENCES `illness_attributes` (`attributeID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `valueCase` FOREIGN KEY (`caseNum`) REFERENCES `illness_record` (`caseNum`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `valueCase` FOREIGN KEY (`recordID`) REFERENCES `illness_record` (`recordID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -89,14 +89,14 @@ UNLOCK TABLES;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `followup_form` (
-  `caseNum` varchar(11) NOT NULL,
+  `recordID` varchar(11) NOT NULL,
   `patientID` varchar(11) NOT NULL,
   `employeeID` varchar(11) NOT NULL,
   `requestDate` varchar(45) NOT NULL,
-  KEY `caseNum_idx` (`caseNum`),
+  KEY `recordID_idx` (`recordID`),
   KEY `patientID_idx` (`patientID`),
   KEY `employeeID_idx` (`employeeID`),
-  CONSTRAINT `followupCase` FOREIGN KEY (`caseNum`) REFERENCES `illness_record` (`caseNum`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `followupCase` FOREIGN KEY (`recordID`) REFERENCES `illness_record` (`recordID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `followupEmployee` FOREIGN KEY (`employeeID`) REFERENCES `employee` (`employeeID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `followupPatient` FOREIGN KEY (`patientID`) REFERENCES `patient_record` (`patientID`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -147,15 +147,15 @@ UNLOCK TABLES;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `illness_record` (
-  `caseNum` varchar(11) NOT NULL,
+  `recordID` varchar(11) NOT NULL,
   `employeeID` varchar(11) NOT NULL,
   `patientID` varchar(11) NOT NULL,
   `name` varchar(45) NOT NULL,
   `recordDate` varchar(45) NOT NULL,
   `modifyDate` varchar(45) NOT NULL,
   `checkupDate` varchar(45) NOT NULL,
-  PRIMARY KEY (`caseNum`),
-  UNIQUE KEY `caseNum_UNIQUE` (`caseNum`),
+  PRIMARY KEY (`recordID`),
+  UNIQUE KEY `recordID_UNIQUE` (`recordID`),
   KEY `patientID_idx` (`patientID`),
   KEY `employeeID_idx` (`employeeID`),
   CONSTRAINT `illnessEmployee` FOREIGN KEY (`employeeID`) REFERENCES `employee` (`employeeID`) ON DELETE NO ACTION ON UPDATE NO ACTION,

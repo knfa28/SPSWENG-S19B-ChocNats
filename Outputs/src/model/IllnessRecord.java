@@ -6,6 +6,15 @@ import java.util.HashMap;
 
 public class IllnessRecord 
 {
+    //column names
+    public static String recordID_col = "recordID";
+    public static String patientID_col = "patientID";
+    public static String physicianID_col = "employeeID";
+    public static String illnessName_col = "name";
+    public static String dateTaken_col = "recordDate";
+    public static String comebackDate_col = "checkupDate";   
+    
+    
     private String recordID;
     private String patientID;
     private String physicianID;
@@ -45,6 +54,11 @@ public class IllnessRecord
             }
         }
         return result;
+    }
+    
+    public ArrayList<Attribute> getAttributes()
+    {
+        return attributes;
     }
     
     public String getDateModified()

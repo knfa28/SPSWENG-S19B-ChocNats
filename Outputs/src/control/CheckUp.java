@@ -10,7 +10,7 @@ public class CheckUp {
     public static void main(String[] args){
 	File file = FileFactory.getFile("src/config/config.csv");
 	if(file.getConnector().getConnection() != null)
-            new MainController();
+            MainController.getInstance();
 	else
             JOptionPane.showMessageDialog(null, "Error connecting to MySQL!", "Message", JOptionPane.ERROR_MESSAGE);
 	}

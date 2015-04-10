@@ -4,6 +4,16 @@ import java.util.ArrayList;
 
 public class Account 
 {
+    //column names
+    public static String userid_col = "employeeID";
+    public static String password_col = "password";
+    public static String fName_col = "firstName";
+    public static String lName_col = "lastName";
+    public static String type_col = "employeeType";
+    public static String mobNum_col = "mobileNum";
+    public static String email_col = "email";
+    public static String registerDate_col = "registerDate";   
+    
     private String userID;
     private String password;
     private String fName;
