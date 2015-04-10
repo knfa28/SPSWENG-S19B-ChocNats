@@ -78,14 +78,19 @@ public class MainController
         return true;
     }
     
-    public void resetPassword(Account user, String password, String adminPassword)
+    public boolean resetPassword(Account user, String password, String adminPassword)
     {
         if(currentAccount.getPassword().equals(adminPassword))
         {
            user.setPassword(password);
             System.out.println("Password:" + user.getPassword());
            AccountsModel.set(user);
-        } 
+           return true;
+        }
+        else
+        {
+            return false;
+        }
     }
     
     public void setCurrPatient(String patientID){

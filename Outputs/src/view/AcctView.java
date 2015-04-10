@@ -236,7 +236,12 @@ public class AcctView extends javax.swing.JFrame {
                 adminPassword = adminPassword + passwordArr[i];
             }
             System.out.println("DONE!");
-            control.resetPassword(currentAccount, password, adminPassword);
+            if(control.resetPassword(currentAccount, password, adminPassword))
+                JOptionPane.showMessageDialog(null, "Password was successfully changed!", "Message", JOptionPane.INFORMATION_MESSAGE);
+            else
+            {
+                JOptionPane.showMessageDialog(null, "Unable to change Password!", "Message", JOptionPane.ERROR_MESSAGE);
+            }
         }
         else if(control.getCurrAcctType().equals("Physician"))
         {
