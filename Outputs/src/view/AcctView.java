@@ -27,9 +27,26 @@ public class AcctView extends javax.swing.JFrame {
         this.currentAccount = currentAccount;
         initComponents();
         
-        if(!control.getCurrAcctType().equals("Administrator"))
+        if(control.getCurrAcctType().equals("Administrator"))
+        {
+            ResetPasswordBtn.setVisible(true);
+        }
+        else if(control.getCurrAcctType().equals("Physician") && currentAccount.getType().equals("Physician"))
+        {
+            ResetPasswordBtn.setVisible(true);
+        }
+        else
         {
             ResetPasswordBtn.setVisible(false);
+        }
+        
+        if(control.getCurrAcctType().equals("Administrator"))
+        {
+            ResetPasswordBtn.setText("Reset Password");
+        }
+        else if(control.getCurrAcctType().equals("Physician"))
+        {
+            ResetPasswordBtn.setText("Refer Patient");
         }
         
         employeeIDData.setText(currentAccount.getUserID());
@@ -193,30 +210,38 @@ public class AcctView extends javax.swing.JFrame {
     }//GEN-LAST:event_backDataActionPerformed
 
     private void ResetPasswordBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetPasswordBtnActionPerformed
-        String password = "";
-        String adminPassword = "";
-        JPasswordField Password = new JPasswordField();
-        JPasswordField AdminPassword = new JPasswordField();
-        char[] passwordArr;
-        Object[] passField = {
-        "New Password",Password,
-        "Admin Password", AdminPassword        
-        };
         
-        JOptionPane.showConfirmDialog(null, passField, "Change Password", JOptionPane.DEFAULT_OPTION);
-        passwordArr = Password.getPassword();
-        for(int i = 0; i < passwordArr.length; i++)
-        {
-            password = password + passwordArr[i];
-        }
-        passwordArr = AdminPassword.getPassword();
-        for(int i = 0; i < passwordArr.length; i++)
-        {
-            adminPassword = adminPassword + passwordArr[i];
-        }
-        System.out.println("DONE!");
-        control.resetPassword(currentAccount, password, adminPassword);
         
+        if(control.getCurrAcctType().equals("Administrator"))
+        {
+            String password = "";
+            String adminPassword = "";
+            JPasswordField Password = new JPasswordField();
+            JPasswordField AdminPassword = new JPasswordField();
+            char[] passwordArr;
+            Object[] passField = {
+            "New Password",Password,
+            "Admin Password", AdminPassword        
+            };
+
+            JOptionPane.showConfirmDialog(null, passField, "Change Password", JOptionPane.DEFAULT_OPTION);
+            passwordArr = Password.getPassword();
+            for(int i = 0; i < passwordArr.length; i++)
+            {
+                password = password + passwordArr[i];
+            }
+            passwordArr = AdminPassword.getPassword();
+            for(int i = 0; i < passwordArr.length; i++)
+            {
+                adminPassword = adminPassword + passwordArr[i];
+            }
+            System.out.println("DONE!");
+            control.resetPassword(currentAccount, password, adminPassword);
+        }
+        else if(control.getCurrAcctType().equals("Physician"))
+        {
+            //refer patient
+        }
     }//GEN-LAST:event_ResetPasswordBtnActionPerformed
 
 

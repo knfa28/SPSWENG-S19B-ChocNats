@@ -547,26 +547,9 @@ public class PhysicianView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
-    private void editAccntBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editAccntBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_editAccntBtnActionPerformed
-
-    private void logoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBtnActionPerformed
-        dispose();
-        MainController.getInstance();
-    }//GEN-LAST:event_logoutBtnActionPerformed
-
-    private void viewBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_viewBtnActionPerformed
-
-    private void registerPatientBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerPatientBtnActionPerformed
- 
-    }//GEN-LAST:event_registerPatientBtnActionPerformed
-
     private void regAcctBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regAcctBtnActionPerformed
         System.out.println(control.getCurrAcctType());
-    	if(control.getCurrAcctType().equals("Administrator"))
+        if(control.getCurrAcctType().equals("Administrator"))
         {
             control.registerAccount();
         }
@@ -576,33 +559,50 @@ public class PhysicianView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_regAcctBtnActionPerformed
 
-    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
-        if(searchTxtbx.getText() == "")
-            JOptionPane.showMessageDialog(null, "Please input a valid Patient ID!", "Message", JOptionPane.ERROR_MESSAGE);
-	else{
-            if(searchCombo.getSelectedItem() == "Patient ID")
-                control.searchPatient(searchTxtbx.getText(), 0);
-            else if(searchCombo.getSelectedItem() == "Name")
-                control.searchPatient(searchTxtbx.getText(), 1);
-            else if(searchCombo.getSelectedItem() == "Patient ID")
-                control.searchPatient(searchTxtbx.getText(), 2);
-	}
-	searchTxtbx.setText("");
-    }//GEN-LAST:event_searchBtnActionPerformed
-
     private void search2BtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_search2BtnActionPerformed
         if(search2Txtbx.getText() == "")
-            JOptionPane.showMessageDialog(null, "Please input a valid Employee ID!", "Message", JOptionPane.ERROR_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Please input a valid Employee ID!", "Message", JOptionPane.ERROR_MESSAGE);
         else{
             if(search2Combo.getSelectedItem() == "Employee ID")
-                control.searchAccount(search2Txtbx.getText(), 0);
+            control.searchAccount(search2Txtbx.getText(), 0);
             else if(search2Combo.getSelectedItem() == "Name")
-                control.searchAccount(search2Txtbx.getText(), 1);
+            control.searchAccount(search2Txtbx.getText(), 1);
             else if(search2Combo.getSelectedItem() == "Specialty")
-                control.searchAccount(search2Txtbx.getText(), 2);
+            control.searchAccount(search2Txtbx.getText(), 2);
         }
         search2Txtbx.setText("");
     }//GEN-LAST:event_search2BtnActionPerformed
+
+    private void registerPatientBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerPatientBtnActionPerformed
+
+    }//GEN-LAST:event_registerPatientBtnActionPerformed
+
+    private void viewBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_viewBtnActionPerformed
+
+    private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
+        if(searchTxtbx.getText() == "")
+        JOptionPane.showMessageDialog(null, "Please input a valid Patient ID!", "Message", JOptionPane.ERROR_MESSAGE);
+        else{
+            if(searchCombo.getSelectedItem() == "Patient ID")
+            control.searchPatient(searchTxtbx.getText(), 0);
+            else if(searchCombo.getSelectedItem() == "Name")
+            control.searchPatient(searchTxtbx.getText(), 1);
+            else if(searchCombo.getSelectedItem() == "Patient ID")
+            control.searchPatient(searchTxtbx.getText(), 2);
+        }
+        searchTxtbx.setText("");
+    }//GEN-LAST:event_searchBtnActionPerformed
+
+    private void editAccntBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editAccntBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editAccntBtnActionPerformed
+
+    private void logoutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBtnActionPerformed
+        dispose();
+        MainController.getInstance();
+    }//GEN-LAST:event_logoutBtnActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel contactsLabel;
