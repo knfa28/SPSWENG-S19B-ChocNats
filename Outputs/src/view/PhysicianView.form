@@ -33,10 +33,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="jTabbedPane1" min="-2" pref="612" max="-2" attributes="0"/>
-          </Group>
+          <Component id="jTabbedPane1" alignment="1" pref="628" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -75,7 +72,7 @@
                                   <Component id="employeeIDLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="nameLabel" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="unrelated" pref="326" max="32767" attributes="0"/>
+                              <EmptySpace type="unrelated" pref="342" max="32767" attributes="0"/>
                               <Component id="registerDateLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="registerDateData" min="-2" max="-2" attributes="0"/>
@@ -273,7 +270,7 @@
                               <Component id="searchTxtbx" min="-2" pref="96" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="searchBtn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="74" max="32767" attributes="0"/>
+                              <EmptySpace pref="90" max="32767" attributes="0"/>
                               <Component id="sortLabel" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jComboBox2" min="-2" pref="158" max="-2" attributes="0"/>
@@ -417,7 +414,7 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jPanel5" max="32767" attributes="0"/>
                           <Group type="102" attributes="0">
@@ -428,7 +425,7 @@
                               <Component id="search2Txtbx" min="-2" pref="96" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="search2Btn" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="74" max="32767" attributes="0"/>
+                              <EmptySpace pref="90" max="32767" attributes="0"/>
                               <Component id="sort2Label" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="sort2Combo" min="-2" pref="158" max="-2" attributes="0"/>

@@ -154,7 +154,9 @@ public class PRView extends javax.swing.JFrame
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        patientRecordPane.setFocusCycleRoot(true);
         patientRecordPane.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
+        patientRecordPane.setPreferredSize(new java.awt.Dimension(628, 439));
 
         patientIDLabel.setText("Patient ID:");
 
@@ -449,11 +451,11 @@ public class PRView extends javax.swing.JFrame
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(patientRecordPane, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addComponent(patientRecordPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(patientRecordPane)
+            .addComponent(patientRecordPane, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

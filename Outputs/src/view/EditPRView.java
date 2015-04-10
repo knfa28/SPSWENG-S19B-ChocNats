@@ -1,17 +1,16 @@
 package view;
 
-import model.PatientRecord;
 import control.MainController;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
+import model.PatientRecord;
 
 public class EditPRView extends javax.swing.JFrame {
 
@@ -61,6 +60,8 @@ public class EditPRView extends javax.swing.JFrame {
         {
             dayComboBox.addItem(i);
         }
+        yearComboBox.addActionListener(new ComboBoxListener());
+        monthComboBox.addActionListener(new ComboBoxListener());
         
         
         
@@ -100,6 +101,20 @@ public class EditPRView extends javax.swing.JFrame {
             dispose();
         }
     }
+    
+    class ComboBoxListener implements ActionListener
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                GregorianCalendar cal = new GregorianCalendar((int)yearComboBox.getSelectedItem(), (int)monthComboBox.getSelectedItem() - 1, 1);
+                int nod = cal.getActualMaximum(GregorianCalendar.DAY_OF_MONTH);
+                dayComboBox.removeAllItems();
+                for(int i = 0; i < nod; i++)
+                {
+                    dayComboBox.addItem(i+1);
+                }
+            }
+        }
     
     class registerBtnActionListener implements ActionListener
     {
@@ -301,6 +316,11 @@ public class EditPRView extends javax.swing.JFrame {
         });
 
         monthComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        monthComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                monthComboBoxActionPerformed(evt);
+            }
+        });
 
         yearComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         yearComboBox.addActionListener(new java.awt.event.ActionListener() {
@@ -463,8 +483,12 @@ public class EditPRView extends javax.swing.JFrame {
     }//GEN-LAST:event_dayComboBoxActionPerformed
 
     private void yearComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yearComboBoxActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_yearComboBoxActionPerformed
+
+    private void monthComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_monthComboBoxActionPerformed
+        
+    }//GEN-LAST:event_monthComboBoxActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
