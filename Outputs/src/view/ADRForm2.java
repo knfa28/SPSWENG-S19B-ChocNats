@@ -627,6 +627,7 @@ public class ADRForm2 extends JFrame {
 		page3.add(lblPulseRate);
 		
 		txtPulseRate = new JTextField();
+		txtPulseRate.setEditable(false);
 		txtPulseRate.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		txtPulseRate.setBounds(350, 73, 41, 25);
 		page3.add(txtPulseRate);
@@ -643,6 +644,7 @@ public class ADRForm2 extends JFrame {
 		page3.add(lblBloodPressure);
 		
 		txtBloodPressure = new JTextField();
+		txtBloodPressure.setEditable(false);
 		txtBloodPressure.setFont(new Font("Tahoma", Font.PLAIN, 11));
 		txtBloodPressure.setColumns(10);
 		txtBloodPressure.setBounds(368, 136, 41, 25);
